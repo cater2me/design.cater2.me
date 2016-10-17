@@ -1,5 +1,6 @@
 require 'file?name=[name].[ext]!./index.html'
 require 'file?name=[name].[ext]!./favicon.ico'
+require '../scss/design.cater2.me.scss'
 require './app.scss'
 
 React = require 'react'
