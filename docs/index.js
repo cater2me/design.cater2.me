@@ -58,7 +58,7 @@
 
 	ReactDOM = __webpack_require__(47);
 
-	App = React.createElement("div", null, React.createElement("button", {
+	App = React.createElement("div", null, React.createElement("div", null, React.createElement("h1", null, "h1. Bootstrap 3"), React.createElement("h2", null, "h2. Heading 2"), React.createElement("h3", null, "h3. Heading 3"), React.createElement("h4", null, "h4. Heading 4"), React.createElement("h5", null, "h5. Heading 5"), React.createElement("h6", null, "h6. Heading 6")), React.createElement("div", null, React.createElement("p", null, "p - paragraph")), React.createElement("button", {
 	  "className": "btn btn-lg btn-primary"
 	}, "Hello World! ", React.createElement("span", {
 	  "className": "glyphicon glyphicon-flag"
