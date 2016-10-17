@@ -1,0 +1,28 @@
+{
+  "name": "design.cater2.me",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "react-bundle-builder -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cater2me/design.cater2.me.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/cater2me/design.cater2.me/issues"
+  },
+  "homepage": "https://github.com/cater2me/design.cater2.me#readme",
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-bundle-builder": "^0.2.0",
+    "react-dom": "^15.3.2"
+  }
+}
