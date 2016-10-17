@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/cater2me/design.cater2.me#readme",
   "dependencies": {
+    "bootstrap-sass": "^3.3.7",
     "react": "^15.3.2",
     "react-bundle-builder": "^0.2.0",
     "react-dom": "^15.3.2"
