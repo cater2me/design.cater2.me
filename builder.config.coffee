@@ -1,5 +1,3 @@
 module.exports = ->
-  entryPath: [__dirname, 'src', 'index.cjsx']
-  outputPath: [__dirname, 'docs']
-  alias: 
-    AliasTest: [__dirname, 'alias_test']
+  input: [__dirname, 'src']
+  output: [__dirname, 'docs']

@@ -1,4 +1,3 @@
-require 'file?name=[name].[ext]!./index.html'
 require 'file?name=[name].[ext]!./favicon.ico'
 require '../scss/design.cater2.me.scss'
 require './app.scss'
@@ -17,7 +16,7 @@ App =
         <h6>h6. Heading 6</h6>
     </div>
     <div>
-      <p>p - paragraph</p>
+      <p>p - paragraph <span className="fa fa-plus"/></p>
     </div>
     <button className="btn btn-lg btn-primary">Hello World! <span className="glyphicon glyphicon-flag"/></button>
   </div>

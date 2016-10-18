@@ -44,9 +44,14 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var App, AppNode, React, ReactDOM;
+	module.exports = __webpack_require__(1);
 
-	__webpack_require__(1);
+
+/***/ },
+/* 1 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var App, AppNode, React, ReactDOM;
 
 	__webpack_require__(2);
 
@@ -58,7 +63,9 @@
 
 	ReactDOM = __webpack_require__(47);
 
-	App = React.createElement("div", null, React.createElement("div", null, React.createElement("h1", null, "h1. Bootstrap 3"), React.createElement("h2", null, "h2. Heading 2"), React.createElement("h3", null, "h3. Heading 3"), React.createElement("h4", null, "h4. Heading 4"), React.createElement("h5", null, "h5. Heading 5"), React.createElement("h6", null, "h6. Heading 6")), React.createElement("div", null, React.createElement("p", null, "p - paragraph")), React.createElement("button", {
+	App = React.createElement("div", null, React.createElement("div", null, React.createElement("h1", null, "h1. Bootstrap 3"), React.createElement("h2", null, "h2. Heading 2"), React.createElement("h3", null, "h3. Heading 3"), React.createElement("h4", null, "h4. Heading 4"), React.createElement("h5", null, "h5. Heading 5"), React.createElement("h6", null, "h6. Heading 6")), React.createElement("div", null, React.createElement("p", null, "p - paragraph ", React.createElement("span", {
+	  "className": "fa fa-plus"
+	}))), React.createElement("button", {
 	  "className": "btn btn-lg btn-primary"
 	}, "Hello World! ", React.createElement("span", {
 	  "className": "glyphicon glyphicon-flag"
@@ -68,12 +75,6 @@
 
 	ReactDOM.render(App, AppNode);
 
-
-/***/ },
-/* 1 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "index.html";
 
 /***/ },
 /* 2 */
@@ -221,25 +222,40 @@
 	var cachedSetTimeout;
 	var cachedClearTimeout;
 
+	function defaultSetTimout() {
+	    throw new Error('setTimeout has not been defined');
+	}
+	function defaultClearTimeout () {
+	    throw new Error('clearTimeout has not been defined');
+	}
 	(function () {
 	    try {
-	        cachedSetTimeout = setTimeout;
-	    } catch (e) {
-	        cachedSetTimeout = function () {
-	            throw new Error('setTimeout is not defined');
+	        if (typeof setTimeout === 'function') {
+	            cachedSetTimeout = setTimeout;
+	        } else {
+	            cachedSetTimeout = defaultSetTimout;
 	        }
+	    } catch (e) {
+	        cachedSetTimeout = defaultSetTimout;
 	    }
 	    try {
-	        cachedClearTimeout = clearTimeout;
-	    } catch (e) {
-	        cachedClearTimeout = function () {
-	            throw new Error('clearTimeout is not defined');
+	        if (typeof clearTimeout === 'function') {
+	            cachedClearTimeout = clearTimeout;
+	        } else {
+	            cachedClearTimeout = defaultClearTimeout;
 	        }
+	    } catch (e) {
+	        cachedClearTimeout = defaultClearTimeout;
 	    }
 	} ())
 	function runTimeout(fun) {
 	    if (cachedSetTimeout === setTimeout) {
 	        //normal enviroments in sane situations
+	        return setTimeout(fun, 0);
+	    }
+	    // if setTimeout wasn't available but was latter defined
+	    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
+	        cachedSetTimeout = setTimeout;
 	        return setTimeout(fun, 0);
 	    }
 	    try {
@@ -260,6 +276,11 @@
 	function runClearTimeout(marker) {
 	    if (cachedClearTimeout === clearTimeout) {
 	        //normal enviroments in sane situations
+	        return clearTimeout(marker);
+	    }
+	    // if clearTimeout wasn't available but was latter defined
+	    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
+	        cachedClearTimeout = clearTimeout;
 	        return clearTimeout(marker);
 	    }
 	    try {
