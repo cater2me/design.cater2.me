@@ -21,4 +21,3 @@ ErrorsBlock.propTypes =
   error: PropTypes.string
 
 module.exports = ErrorsBlock
-
