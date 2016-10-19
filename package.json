@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "react-bundle-builder -b"
+    "build": "react-bundle-builder -b",
+    "watch": "react-bundle-builder --hmr"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,8 @@
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
     "react": "^15.3.2",
-    "react-bundle-builder": "^0.2.5",
-    "react-dom": "^15.3.2"
+    "react-bundle-builder": "^0.2.6",
+    "react-dom": "^15.3.2",
+    "react-fa": "^4.1.2"
   }
 }
