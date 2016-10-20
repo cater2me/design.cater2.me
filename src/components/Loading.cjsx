@@ -17,6 +17,14 @@ Loading = ->
     <SpinLoading />
   </div>
 
+LoadingTbody = (props={})->
+  colSpan = props.colSpan || 1
+  <tbody>
+    <tr>
+      <td colSpan={colSpan} className="text-center"><Loading /></td>
+    </tr>
+  </tbody>
+
 LoadingOrValue = React.createClass
   propTypes:
     isLoading: PropTypes.bool.isRequired
@@ -30,3 +38,4 @@ LoadingOrValue = React.createClass
 module.exports = Loading
 module.exports.SpinLoading = SpinLoading
 module.exports.LoadingOrValue = LoadingOrValue
+module.exports.LoadingTbody = LoadingTbody
