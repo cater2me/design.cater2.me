@@ -25,6 +25,27 @@ LoadingTbody = (props={})->
     </tr>
   </tbody>
 
+# example for LoadMore
+  # renderLoadMoreOrders: ->
+  #   {pagination, isLoading, isLoadingMore, loadMoreOrders} = @props
+  #   <LoadMore show={pagination.hasMore && !isLoading}
+  #     disabled={isLoadingMore}
+  #     isLoading={isLoadingMore}
+  #     loadMore={loadMoreOrders}
+  #   >
+  #     Load more orders
+  #   </LoadMore>
+LoadMore = (props)->
+  {show, loadMore, disabled, isLoading, children} = props
+  return <span/> unless show
+
+  btn = <button
+    className="btn btn-primary"
+    disabled={disabled}
+    onClick={loadMore}>{children}</button>
+  btn = <Loading /> if isLoading
+  <div className="text-center">{btn}</div>
+
 LoadingOrValue = React.createClass
   propTypes:
     isLoading: PropTypes.bool.isRequired
