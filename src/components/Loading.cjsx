@@ -60,3 +60,4 @@ module.exports = Loading
 module.exports.SpinLoading = SpinLoading
 module.exports.LoadingOrValue = LoadingOrValue
 module.exports.LoadingTbody = LoadingTbody
+module.exports.LoadMore = LoadMore
