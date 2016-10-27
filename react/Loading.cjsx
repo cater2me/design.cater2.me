@@ -1,9 +1,10 @@
 React = require 'react'
 {PropTypes} = React
-FontAwesome = require('react-fa').default
 
 SpinLoading = ->
-  <FontAwesome spin name="circle-o-notch" />
+  <span>
+   <span className="fa fa-spin fa-circle-o-notch"/>
+  </span>
 
 loadingStyles =
   display: 'inline-block'

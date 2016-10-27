@@ -1,6 +1,5 @@
 React = require 'react'
 {PropTypes} = React
-FontAwesome = require('react-fa').default
 _ = require 'lodash'
 
 # tmp
@@ -48,7 +47,7 @@ module.exports = React.createClass
   render: ->
     {isSimple, isOrdered, iconName, title} = @state
     return  <td><span>{title}</span></td> if isSimple
-    icon = isOrdered && <FontAwesome name={iconName} /> || <span />
+    icon = isOrdered && <span><span className={'fa fa-' + iconName}/></span> || <span />
     <td>
       <span onClick={@setOrdering}>
         <span>{title}</span>

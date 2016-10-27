@@ -1,6 +1,6 @@
 React = require 'react'
 
-Loading = require 'Components/Loading'
+Loading = require 'ReactComponents/Loading'
 {LoadingOrValue, SpinLoading} = Loading
 
 module.exports = ->
