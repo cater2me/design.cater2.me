@@ -5,6 +5,8 @@ require './app.scss'
 React = require 'react'
 ReactDOM = require 'react-dom'
 
+LoadingSample = require './examples/LoadingSample'
+
 App =
   <div>
     <div>
@@ -19,6 +21,8 @@ App =
       <p>p - paragraph <span className="fa fa-plus"/></p>
     </div>
     <button className="btn btn-lg btn-primary">Hello World! <span className="glyphicon glyphicon-flag"/></button>
+
+    <LoadingSample/>
   </div>
 
 AppNode = document.getElementById 'app'

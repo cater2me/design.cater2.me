@@ -51,7 +51,7 @@
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var App, AppNode, React, ReactDOM;
+	var App, AppNode, LoadingSample, React, ReactDOM;
 
 	__webpack_require__(2);
 
@@ -63,13 +63,15 @@
 
 	ReactDOM = __webpack_require__(47);
 
+	LoadingSample = __webpack_require__(185);
+
 	App = React.createElement("div", null, React.createElement("div", null, React.createElement("h1", null, "h1. Bootstrap 3"), React.createElement("h2", null, "h2. Heading 2"), React.createElement("h3", null, "h3. Heading 3"), React.createElement("h4", null, "h4. Heading 4"), React.createElement("h5", null, "h5. Heading 5"), React.createElement("h6", null, "h6. Heading 6")), React.createElement("div", null, React.createElement("p", null, "p - paragraph ", React.createElement("span", {
 	  "className": "fa fa-plus"
 	}))), React.createElement("button", {
 	  "className": "btn btn-lg btn-primary"
 	}, "Hello World! ", React.createElement("span", {
 	  "className": "glyphicon glyphicon-flag"
-	})));
+	})), React.createElement(LoadingSample, null));
 
 	AppNode = document.getElementById('app');
 
@@ -21469,6 +21471,120 @@
 
 	module.exports = ReactDOMNullInputValuePropHook;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(16)))
+
+/***/ },
+/* 185 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Loading, LoadingOrValue, React, SpinLoading;
+
+	React = __webpack_require__(14);
+
+	Loading = __webpack_require__(186);
+
+	LoadingOrValue = Loading.LoadingOrValue, SpinLoading = Loading.SpinLoading;
+
+	module.exports = function() {
+	  return React.createElement("div", null, React.createElement("div", {
+	    "className": 'example'
+	  }, React.createElement("code", {
+	    "className": 'example-code'
+	  }, "Loading = require \'Components\x2FLoading\'\n{LoadingOrValue, SpinLoading} = Loading\n\x3CLoading\x2F\x3E"), React.createElement(Loading, null)), React.createElement("div", {
+	    "className": 'example'
+	  }, React.createElement("code", null, "\x3CSpinLoading\x2F\x3E\x3CSpinLoading\x2F\x3E"), React.createElement(SpinLoading, null), React.createElement(SpinLoading, null)), React.createElement("div", {
+	    "className": 'example'
+	  }, React.createElement("code", null, "\x3CLoadingOrValue isLoading=\'false\'\x3E string or component \x3C\x2FLoadingOrValue\x3E"), React.createElement(LoadingOrValue, {
+	    "isLoading": false
+	  }, " string or component "), React.createElement("br", null), React.createElement("code", null, "\x3CLoadingOrValue isLoading=\'true\'\x3E string or component \x3C\x2FLoadingOrValue\x3E"), React.createElement(LoadingOrValue, {
+	    "isLoading": true
+	  }, " string or component ")));
+	};
+
+
+/***/ },
+/* 186 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var LoadMore, Loading, LoadingOrValue, LoadingTbody, PropTypes, React, SpinLoading, loadingStyles;
+
+	React = __webpack_require__(14);
+
+	PropTypes = React.PropTypes;
+
+	SpinLoading = function() {
+	  return React.createElement("span", null, React.createElement("span", {
+	    "className": "fa fa-spin fa-circle-o-notch"
+	  }));
+	};
+
+	loadingStyles = {
+	  display: 'inline-block',
+	  width: '100%',
+	  margin: '8px 12px',
+	  fontSize: '16px',
+	  textAlign: 'center'
+	};
+
+	Loading = function() {
+	  return React.createElement("div", {
+	    "style": loadingStyles
+	  }, React.createElement(SpinLoading, null));
+	};
+
+	LoadingTbody = function(props) {
+	  var colSpan;
+	  if (props == null) {
+	    props = {};
+	  }
+	  colSpan = props.colSpan || 1;
+	  return React.createElement("tbody", null, React.createElement("tr", null, React.createElement("td", {
+	    "colSpan": colSpan,
+	    "className": "text-center"
+	  }, React.createElement(Loading, null))));
+	};
+
+	LoadMore = function(props) {
+	  var btn, children, disabled, isLoading, loadMore, show;
+	  show = props.show, loadMore = props.loadMore, disabled = props.disabled, isLoading = props.isLoading, children = props.children;
+	  if (!show) {
+	    return React.createElement("span", null);
+	  }
+	  btn = React.createElement("button", {
+	    "className": "btn btn-primary",
+	    "disabled": disabled,
+	    "onClick": loadMore
+	  }, children);
+	  if (isLoading) {
+	    btn = React.createElement(Loading, null);
+	  }
+	  return React.createElement("div", {
+	    "className": "text-center"
+	  }, btn);
+	};
+
+	LoadingOrValue = React.createClass({
+	  propTypes: {
+	    isLoading: PropTypes.bool.isRequired,
+	    children: PropTypes.any
+	  },
+	  render: function() {
+	    var children, content, isLoading, ref;
+	    ref = this.props, isLoading = ref.isLoading, children = ref.children;
+	    content = isLoading && React.createElement(SpinLoading, null) || children;
+	    return React.createElement("span", null, " ", content);
+	  }
+	});
+
+	module.exports = Loading;
+
+	module.exports.SpinLoading = SpinLoading;
+
+	module.exports.LoadingOrValue = LoadingOrValue;
+
+	module.exports.LoadingTbody = LoadingTbody;
+
+	module.exports.LoadMore = LoadMore;
+
 
 /***/ }
 /******/ ]);
