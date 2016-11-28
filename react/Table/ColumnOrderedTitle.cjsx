@@ -2,7 +2,7 @@ React = require 'react'
 {PropTypes} = React
 _ = require 'lodash'
 
-# tmp
+require './ColumnOrderedTitle.scss'
 
 module.exports = React.createClass
   displayName: 'ColumnOrderedTitle'
@@ -49,13 +49,21 @@ module.exports = React.createClass
   render: ->
     {isSimple, isOrdered, iconName, title, colSpan} = @state
     if isSimple
-      content = <span>{title}</span>
-    else
-      icon = isOrdered && <span><span className={'fa fa-' + iconName}/></span> || <span />
-      content = <span onClick={@setOrdering}>
-        <span>{title}</span>
-        &nbsp;
-        <span>{icon}</span>
-      </span>
+      content = <span className='ColumnOrderedTitle__title-without-ordering'>{title}</span>
+      return <td colSpan={colSpan || undefined} className='ColumnOrderedTitle__td'>{content}</td>
 
-    <td colSpan={colSpan || undefined}>{content}</td>
+    if isOrdered
+      icon = <span className={'fa fa-' + iconName}/>
+      titleKlass = 'ColumnOrderedTitle__title-ordered'
+    else
+      icon = <span>&nbsp;</span>
+      titleKlass = 'ColumnOrderedTitle__title-with-ordering'
+
+    <td colSpan={colSpan || undefined}
+      onClick={@setOrdering}
+      title={"Order by '#{title}'"}
+      className='ColumnOrderedTitle__td-active'
+    >
+      <span className={titleKlass}>{title}</span>
+      <span className='ColumnOrderedTitle__icon'>{icon}</span>
+    </td>
