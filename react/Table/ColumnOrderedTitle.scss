@@ -1,0 +1,25 @@
+.ColumnOrderedTitle__td{
+  white-space: nowrap;
+}
+.ColumnOrderedTitle__td-active{
+  @extend .ColumnOrderedTitle__td;
+  cursor: pointer;
+}
+
+.ColumnOrderedTitle__icon{
+  padding-left: 4px;
+  min-width: 16px;
+  display: inline-block;
+}
+
+.ColumnOrderedTitle__title-without-ordering{
+  font-weight: 400;
+}
+
+.ColumnOrderedTitle__title-with-ordering{
+  font-weight: 600;
+}
+
+.ColumnOrderedTitle__title-ordered{
+  font-weight: 600;
+}
