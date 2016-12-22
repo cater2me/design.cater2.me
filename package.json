@@ -24,7 +24,7 @@
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
     "react": "^15.3.2",
-    "react-bundle-builder": "0.2.9",
+    "react-bundle-builder": "0.4.7",
     "react-dom": "^15.3.2"
   }
 }
