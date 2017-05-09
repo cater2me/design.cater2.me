@@ -47,7 +47,7 @@ LoadMore = (props)->
   btn = <Loading /> if isLoading
   <div className="text-center">{btn}</div>
 
-LoadingOrValue = require('react-create-class')
+LoadingOrValue = require('create-react-class')
   propTypes:
     isLoading: PropTypes.bool.isRequired
     children: PropTypes.any
