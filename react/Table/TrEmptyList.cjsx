@@ -1,5 +1,5 @@
 React = require 'react'
-{PropTypes} = React
+PropTypes = require 'prop-types'
 
 TrEmptyList = (props)->
   colSpan = Number(props.colSpan) || 1

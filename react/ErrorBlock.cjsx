@@ -1,5 +1,5 @@
 React = require 'react'
-{PropTypes} = React
+PropTypes = require 'prop-types'
 {isEmpty, isString} = require 'lodash'
 
 ErrorsBlock = (props)->
