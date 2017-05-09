@@ -4,7 +4,7 @@ _ = require 'lodash'
 
 require './ColumnOrderedTitle.scss'
 
-module.exports = React.createClass
+module.exports = require('react-create-class')
   displayName: 'ColumnOrderedTitle'
 
   propTypes:
