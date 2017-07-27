@@ -47,15 +47,12 @@ LoadMore = (props)->
   btn = <Loading /> if isLoading
   <div className="text-center">{btn}</div>
 
-LoadingOrValue = require('create-react-class')
-  propTypes:
-    isLoading: PropTypes.bool.isRequired
-    children: PropTypes.any
-
-  render: ->
-    {isLoading, children} = @props
-    content = isLoading && <SpinLoading /> || children
-    <span> {content}</span>
+LoadingOrValue = ({isLoading, children}) ->
+  content = isLoading && <SpinLoading /> || children
+  <span> {content}</span>
+LoadingOrValue.propTypes =
+  isLoading: PropTypes.bool.isRequired
+  children: PropTypes.any
 
 module.exports = Loading
 module.exports.SpinLoading = SpinLoading
