@@ -8,7 +8,8 @@ module.exports = require('create-react-class')
   displayName: 'ColumnOrderedTitle'
 
   propTypes:
-    title: PropTypes.string
+    className: PropTypes.string
+    title: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
     field: PropTypes.string
     ordering: PropTypes.shape
       sort_by: PropTypes.string
@@ -47,10 +48,11 @@ module.exports = require('create-react-class')
     !_.isEqual(@state, nextState)
 
   render: ->
+    tdClassName = @props.className || ''
     {isSimple, isOrdered, iconName, title, colSpan} = @state
     if isSimple
       content = <span className='ColumnOrderedTitle__title-without-ordering'>{title}</span>
-      return <td colSpan={colSpan || undefined} className='ColumnOrderedTitle__td'>{content}</td>
+      return <td colSpan={colSpan || undefined} className={"#{tdClassName} ColumnOrderedTitle__td"}>{content}</td>
 
     if isOrdered
       icon = <span className={'fa fa-' + iconName}/>
@@ -62,7 +64,7 @@ module.exports = require('create-react-class')
     <td colSpan={colSpan || undefined}
       onClick={@setOrdering}
       title={"Order by '#{title}'"}
-      className='ColumnOrderedTitle__td-active'
+      className={"#{tdClassName} ColumnOrderedTitle__td-active"}
     >
       <span className={titleKlass}>{title}</span>
       <span className='ColumnOrderedTitle__icon'>{icon}</span>
