@@ -1,6 +1,6 @@
 {
   "name": "design.cater2.me",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "",
   "main": "index.js",
   "directories": {
@@ -22,13 +22,13 @@
   },
   "homepage": "https://github.com/cater2me/design.cater2.me#readme",
   "dependencies": {
-    "bootstrap-sass": "^3.3.7",
+    "bootstrap-sass": "^3.3.7"
+  },
+  "devDependencies": {
+    "react-bundle-builder": "^0.6.3",
     "create-react-class": "^15.5.2",
     "prop-types": "^15.5.8",
     "react": "15.5.4",
     "react-dom": "15.5.4"
-  },
-  "devDependencies": {
-    "react-bundle-builder": "^0.6.3"
   }
 }
