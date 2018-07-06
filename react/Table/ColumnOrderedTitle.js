@@ -9,7 +9,7 @@ PropTypes = require('prop-types');
 
 _ = require('lodash');
 
-require('./ColumnOrderedTitle.scss');
+require('../../scss/ColumnOrderedTitle.scss');
 
 module.exports = require('create-react-class')({
   displayName: 'ColumnOrderedTitle',
