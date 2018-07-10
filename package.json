@@ -1,15 +1,17 @@
 {
   "name": "design.cater2.me",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "",
   "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "react-bundle-builder -b",
-    "watch": "react-bundle-builder --hmr"
+    "start": "zeropack serve",
+    "serve": "zeropack serve",
+    "build": "zeropack build",
+    "test": "true",
+    "prepare": "coffee --compile --transpile --bare -o react/ -c components/"
   },
   "repository": {
     "type": "git",
@@ -22,13 +24,14 @@
   },
   "homepage": "https://github.com/cater2me/design.cater2.me#readme",
   "dependencies": {
-    "bootstrap-sass": "^3.3.7"
+    "bootstrap-sass": "^3.3.7",
+    "lodash": "^4.17.10"
   },
   "devDependencies": {
-    "react-bundle-builder": "^0.6.3",
+    "zeropack-preset-coffee": "^0.0.20",
     "create-react-class": "^15.5.2",
-    "prop-types": "^15.5.8",
-    "react": "15.5.4",
-    "react-dom": "15.5.4"
+    "prop-types": "^15.6.1",
+    "react": "16.0.0",
+    "react-dom": "16.0.0"
   }
 }
