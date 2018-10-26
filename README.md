@@ -1,9 +1,7 @@
-# design.cater2.me
+# [design.cater2.me](https://cater2me.github.io/design.cater2.me/ "cater2me.github.io/design.cater2.me" )
 
-  Docs - 
-<a target="_blank" href="https://cater2me.github.io/design.cater2.me/">cater2me.github.io/design.cater2.me</a>
+## Start storybook
+*    `npm -g install yarn`
+*    `yarn`
+*    `yarn start`
 
-  Build
-*    npm install
-*    npm run build
-  
