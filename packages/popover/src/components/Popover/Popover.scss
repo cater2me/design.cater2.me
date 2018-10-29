@@ -1,0 +1,97 @@
+@import '~Styles/base';
+
+$popover-arrow-color: #fff;
+$popover-body-color: #fff;
+$border-color: #ccc;
+
+
+.c2me-popover-target {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.c2me-popover {
+  display: flex;
+  z-index: z(popover);
+
+  &__body {
+    background-color: $popover-body-color;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  &__arrow {
+    position: absolute;
+    z-index: z(popover) + 1;
+
+    &::after {
+      content: '';
+      position: absolute;
+    }
+  }
+
+  > div:last-child {
+    // hide scroll when loading ResizeDetector
+    // https://github.com/maslianok/react-resize-detector/issues/6
+    &,
+    > div {
+      overflow: hidden !important;
+    }
+  }
+
+  &[data-placement='top'] &__arrow {
+    @include triangle(bottom, $border-color, 12px, 6px);
+
+    bottom: -6px;
+
+    &::after {
+      @include triangle(bottom, $popover-arrow-color, 12px, 6px);
+
+      left: -6px;
+      top: -8px;
+    }
+  }
+
+  &[data-placement='bottom'] &__arrow {
+    @include triangle(top, $border-color, 12px, 6px);
+
+    top: -6px;
+
+    &::after {
+      @include triangle(top, $popover-arrow-color, 12px, 6px);
+
+      content: '';
+      position: absolute;
+      left: -6px;
+      top: 2px;
+    }
+  }
+
+  &[data-placement^="right"] &__arrow {
+    @include triangle(left, $border-color, 12px, 6px);
+
+    left: -6px;
+
+    &::after {
+      @include triangle(left, $popover-arrow-color, 12px, 6px);
+
+      left: 2px;
+      top: -6px;
+    }
+  }
+
+  &[data-placement^="left"] &__arrow {
+    @include triangle(right, $border-color, 12px, 6px);
+
+    right: -6px;
+
+    &::after {
+      @include triangle(right, $popover-arrow-color, 12px, 6px);
+
+      left: -8px;
+      top: -6px;
+    }
+  }
+}

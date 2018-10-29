@@ -1,12 +1,14 @@
 {
-  "name": "design.cater2.me",
-  "private": true,
-  "description": "cater2me ui",
+  "name": "cater2me-popover",
+  "version": "0.0.1",
+  "description": "Popover",
   "scripts": {
     "start": "zeropack serve",
     "serve": "zeropack serve",
     "build": "zeropack build"
   },
+  "files": ["dist"],
+  "main": "./dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cater2me/design.cater2.me.git"
@@ -16,11 +18,9 @@
   },
   "author": "cater2me",
   "license": "UNLICENSED",
-  
   "homepage": "https://github.com/cater2me/design.cater2.me#readme",
   "dependencies": {},
   "devDependencies": {
-    "lerna": "^3.4.3",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "zeropack-preset-coffee": "^0.0.20"
