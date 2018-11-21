@@ -1,6 +1,8 @@
-node_modules/
 .DS_Store
+.cache/
+.cache-loader/
+.vscode/
+node_modules/
+dist/
 .env
 npm-debug*
-/dist/
-.cache-loader

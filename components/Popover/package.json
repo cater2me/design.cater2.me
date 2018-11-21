@@ -1,0 +1,21 @@
+{
+  "name": "@cater2me/popover",
+  "version": "0.0.1",
+  "description": "cater2me Popover",
+  "files": ["dist"],
+  "main": "./dist/index.js",
+  "author": "cater2me",
+  "homepage": "https://github.com/cater2me/design.cater2.me#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cater2me/design.cater2.me.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cater2me/design.cater2.me/issues"
+  },
+  "engines": {
+    "node": "^8"
+  },
+  "dependencies": {},
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,82 @@
+@import '~Styles/base';
+
+.c2me-btn {
+  font-size: 14px;
+  outline: none;
+
+  &.btn-sm {
+    font-size: 9px;
+  }
+
+  &.btn-round {
+    border-radius: 2.5rem;
+    &:focus {
+      box-shadow: 0 1px 2px 0 color(gray-light-10, background);
+    }
+  }
+
+  &.btn-white {
+    color: #283AF9;
+    background-color: transparent;
+
+    &:focus,
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  &.btn-blue {
+    background-color: color(main-blue, background);
+    color: #fff;
+
+    &:focus,
+    &:hover {
+      box-shadow: 0 0 1px 1px darken(color(main-blue, background), 10%);
+    }
+  }
+
+  &.btn-white.c2me-btn-disabled {
+    background-color: transparent;
+    color: #283AF9;
+  }
+
+  &.btn-yellow {
+    background-color: color(main-yellow, background);
+
+    &:focus,
+    &:hover {
+      box-shadow: 0 0 1px 1px darken(color(main-yellow, background), 10%);
+    }
+  }
+
+  &.btn-yellow.c2me-btn-shadow {
+    box-shadow: 0 1px 2px 0 color(gray-light-10, background);
+  }
+
+  &.btn-green {
+    background-color: color(main-green, background);
+    color: #fff;
+
+    &:hover {
+      box-shadow: 0 0 1px 1px darken(color(main-green, background), 10%);
+    }
+  }
+
+  &.btn-transparent {
+    background-color: transparent;
+    box-shadow: 0 0 0 0.5px color(gray-light-10, background);
+    color: #000;
+
+    &:focus,
+    &:hover {
+      box-shadow: 0 0 1px 1px darken(color(main-yellow, background), 10%);
+    }
+  }
+
+  &.c2me-btn-disabled {
+    opacity: 0.8;
+    background-color: color(gray-light-20, background);
+    color: #000;
+    cursor: not-allowed;
+  }
+}

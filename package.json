@@ -1,31 +1,25 @@
 {
-  "name": "design.cater2.me",
   "private": true,
-  "description": "cater2me ui",
+  "workspaces": [
+    "components/*"
+  ],
   "scripts": {
-    "start": "zeropack serve",
-    "serve": "zeropack serve",
-    "build": "zeropack build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cater2me/design.cater2.me.git"
-  },
-  "bugs": {
-    "url": "https://github.com/cater2me/design.cater2.me/issues"
-  },
-  "author": "cater2me",
-  "license": "UNLICENSED",
-  
-  "homepage": "https://github.com/cater2me/design.cater2.me#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "lerna": "^3.4.3",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
-    "zeropack-preset-coffee": "^0.0.20"
+    "start": "zeropack-storybook start",
+    "build": "zeropack-storybook build"
   },
   "engines": {
     "node": "^8"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
+  },
+  "devDependencies": {
+    "lerna": "^3.4.3",
+    "zeropack-core": "^0.1.0-alpha.0",
+    "zeropack-preset-coffee": "^0.1.0-alpha.0",
+    "zeropack-storybook": "^0.1.0-alpha.0"
   }
 }
