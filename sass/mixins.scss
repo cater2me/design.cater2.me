@@ -1,0 +1,55 @@
+@mixin ellipsis ($max-width: 100%) {
+  display: inline-block;
+  max-width: $max-width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin breakpoint($point) {
+  $point-list: get-list-item($point, $breakpoint-list);
+  $min-width: nth($point-list, 2);
+  $max-width: nth($point-list, 3);
+  @if $min-width and $max-width {
+    @media only screen and (min-width: $min-width) and (max-width: $max-width) { @content; }
+  } @else if $min-width {
+    @media only screen and (min-width: $min-width) { @content; }
+  } @else if $max-width {
+    @media only screen and (max-width: $max-width) { @content; }
+  }
+}
+
+@function opposite-direction($direction) {
+  $direction-map: (
+    'top':    'bottom',
+    'right':  'left',
+    'bottom': 'top',
+    'left':   'right',
+    'center': 'center',
+    'ltr':    'rtl',
+    'rtl':    'ltr'
+  );
+  @return map-get($direction-map, $direction);
+}
+
+
+@mixin triangle($direction: top, $color: gray, $width: 1rem, $height: $width) {
+  $direction: if(function-exists("to-lower-case") == true, to-lower-case($direction), $direction);
+
+  @if not index(top right bottom left, $direction) {
+    @warn "Direction must be one of `top`, `right`, `bottom` or `left`; currently `#{$direction}`.";
+  } @else {
+    width: 0;
+    height: 0;
+    border-#{opposite-direction($direction)}: $height solid $color;
+    $perpendicular-border: $width / 2 solid transparent;
+
+    @if $direction == top or $direction == bottom {
+      border-left:   $perpendicular-border;
+      border-right:  $perpendicular-border;
+    } @else if $direction == right or $direction == left {
+      border-bottom: $perpendicular-border;
+      border-top:    $perpendicular-border;
+    }
+  }
+}

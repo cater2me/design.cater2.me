@@ -1,0 +1,30 @@
+@function color($name, $type: 'common') {
+  @return map-get(map-get($colors, $type), $name);
+}
+
+@function get-list-item($label, $list) {
+  @each $list-item in $list {
+    @if nth($list-item, 1) == $label {
+      @return $list-item;
+    }
+  }
+  @return null;
+}
+
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+
+  @return $map;
+}
+
+@function z($layers...) {
+  @if not map-has-nested-keys($z-layers, $layers...) {
+    @error "No layer found for #{inspect($layers)} in $z-layers map.
+          See available list:
+            `#{inspect($colors)}";
+  }
+
+  @return map-deep-get($z-layers, $layers...);
+}

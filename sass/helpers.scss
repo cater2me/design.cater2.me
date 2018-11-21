@@ -1,0 +1,25 @@
+%c-scroll {
+
+  &::-webkit-scrollbar {
+    background-color: transparent;
+    width: 8px;
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: color(gray-light-30, background);
+    border-radius: 4px;
+
+    &:hover {
+      background-color: color(gray-light-20, background);
+    }
+
+    &:active {
+      background-color: color(gray-light-20, background);
+    }
+  }
+}

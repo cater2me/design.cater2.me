@@ -1,0 +1,10 @@
+{
+  "name": "@cater2me-ui/sass",
+  "version": "0.1.0",
+  "description": "cater2me common sass variables, functions, mixins and helpers",
+  "main": "index.scss",
+  "author": "cater2me",
+  "repository": "https://github.com/cater2me/design.cater2.me/tree/master/sass",
+  "bugs": "https://github.com/cater2me/design.cater2.me/issues",
+  "license": "UNLICENSED"
+}

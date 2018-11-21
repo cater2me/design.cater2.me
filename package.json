@@ -1,7 +1,11 @@
 {
   "private": true,
+  "name": "cater2me-ui",
+  "version": "0.1.0",
+  "homepage": "https://github.com/cater2me/design.cater2.me",
   "workspaces": [
-    "components/*"
+    "components/*",
+    "sass"
   ],
   "scripts": {
     "start": "zeropack-storybook start",

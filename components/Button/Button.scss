@@ -1,4 +1,4 @@
-@import '~Styles/base';
+@import '~@cater2me-ui/sass';
 
 .c2me-btn {
   font-size: 14px;
@@ -6,6 +6,10 @@
 
   &.btn-sm {
     font-size: 9px;
+  }
+
+  &.btn-square {
+    border-radius: 0;
   }
 
   &.btn-round {

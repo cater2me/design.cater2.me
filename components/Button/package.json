@@ -1,17 +1,17 @@
 {
-  "name": "@cater2me/button",
-  "version": "0.0.1",
-  "description": "cater2me Popover",
+  "name": "@cater2me-ui/button",
+  "version": "0.1.0",
+  "description": "cater2me Button",
   "files": ["dist"],
   "main": "./dist/index.js",
   "author": "cater2me",
-  "homepage": "https://github.com/cater2me/design.cater2.me#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cater2me/design.cater2.me.git"
+  "homepage": "https://github.com/cater2me/design.cater2.me/tree/master/components/Button",
+  "bugs": "https://github.com/cater2me/design.cater2.me/issues",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@cater2me-ui/sass": "~0.1.0"
   },
-  "bugs": {
-    "url": "https://github.com/cater2me/design.cater2.me/issues"
-  },
-  "license": "UNLICENSED"
+  "peerDependencies": {
+    "@cater2me-ui/sass": "~0.1.0"
+  }
 }

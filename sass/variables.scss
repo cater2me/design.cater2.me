@@ -1,0 +1,80 @@
+$colors: (
+  background: (
+    white: #fff,
+    gray: #35363a,
+    gray-light-10: #4d5758,
+    gray-light-20: #9e9e9e,
+    gray-light-30: #dcdadc,
+    gray-light-70: #f2f3f3,
+    gray-light-80: #f8f8f8,
+    red: #ba2a2a,
+    red-darker-10: #b72025,
+    red-light-5: #cc5448,
+    red-light-8: #212529,
+    // TODO: rename all colors
+    red-light-10: #ffd93d,
+    pink: #ffdddb,
+    // new Design
+    main-yellow: #FED84D,
+    main-blue: #337AB7,
+    main-green: #28A745,
+    main-red: #CE4949,
+  ),
+  border: (
+    gray: #7e7e7e,
+    gray-light-8: #979797,
+    gray-light-10: #a9a9a9,
+    gray-light-50: #CBCBCC,
+    gray-light-60: #D3D3D3,
+    gray-light-70: #f2f2f2,
+    black: #1e1e1e,
+    red: #ac0005,
+  ),
+  text: (
+    black: #253233,
+    blue-light-30: #31bac8,
+    gray: #3a4546,
+    gray-light-10: #7e7e7e,
+    gray-light-20: #9a9a9a,
+    red: #212529,
+    red-light-10: #b70c00,
+    red-light-30: #cb5448,
+    red-light-35: #EF6B5B,
+    green: #68b800,
+    yellow: #ffd93d,
+    // new Design
+    main-green: #52BE63,
+  ),
+  common: (
+  )
+);
+
+$breakpoint-list: (
+  (mobile-small,  null,   479px),
+  (mobile,        480px,  767px),
+  (tablet,        768px,  979px),
+  (medium,        980px,  1199px),
+  (desktop,       1200px, 1439px),
+  (desktop-large, 1440px, 1919px),
+  (desktop-hd,    1920px, null),
+  (only-mobile,   null, 767px),
+  (only-desktop,  768px, null)
+);
+
+$z-layers: (
+  layout: (
+    header: 9000,
+    main: 8000,
+    footer: 8000
+  ),
+  modal: (
+    backdrop: 80000,
+    header: 90000,
+    main: 90000,
+    footer: 90000
+  ),
+  popover: 95000,
+  tooltip: 96000,
+  sentry: 99999,
+  toastr: 999999
+);
