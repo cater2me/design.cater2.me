@@ -1,10 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
+import { withKnobs, select } from '@storybook/addon-knobs';
 
 import Tooltip from './Tooltip'
 
 storiesOf('Components|Tooltip', module)
+  .addDecorator(withKnobs)
   .add 'default', ->
     <React.Fragment>
       implement on &nbsp;
@@ -19,7 +21,7 @@ storiesOf('Components|Tooltip', module)
       <br/><br/><br/><br/>
       <Tooltip
         trigger={['click']}
-        placement="top"
+        placement={select 'placement', ['top', 'right', 'bottom', 'left'], 'top' }
         overlay={<span>I am Tooltip :))</span>}
       >
         <span>
