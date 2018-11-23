@@ -8,6 +8,10 @@
   "license": "UNLICENSED",
   "main": "dist/index.js",
   "files": ["dist"],
+  "dependencies": {
+    "classnames": "2.2.5",
+    "rc-tooltip": "3.7.3"
+  },
   "peerDependencies": {
     "@cater2me-ui/sass": "^0.1.0",
     "prop-types": "^15.6.0",

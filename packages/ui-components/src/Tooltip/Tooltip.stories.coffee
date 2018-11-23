@@ -1,0 +1,30 @@
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
+
+import Tooltip from './Tooltip'
+
+storiesOf('Components|Tooltip', module)
+  .add 'default', ->
+    <React.Fragment>
+      implement on &nbsp;
+      <b>
+        <a 
+          src="https://github.com/react-component/tooltip"
+          target="_blank"
+        >
+          rc-tooltip
+        </a>
+      </b>
+      <br/><br/><br/><br/>
+      <Tooltip
+        trigger={['click']}
+        placement="top"
+        overlay={<span>I am Tooltip :))</span>}
+      >
+        <span>
+          Hello, click on me! :)
+        </span>
+      </Tooltip>
+    </React.Fragment>
+# onPopupAlign={() => copy(data)}

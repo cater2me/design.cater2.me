@@ -1,0 +1,44 @@
+@import "~@cater2me/ui-sass";
+
+$arrow-width: 5px;
+$background-color: black;
+$arrow-color: $background-color;
+
+.c2me-tooltip {
+  z-index: z(tooltip) + 1;
+
+  &.rc-tooltip-placement-top,
+  &.rc-tooltip-placement-topLeft,
+  &.rc-tooltip-placement-topRight {
+    .rc-tooltip-arrow {
+      border-top-color: $arrow-color;
+    }
+  }
+  &.rc-tooltip-placement-right,
+  &.rc-tooltip-placement-rightTop,
+  &.rc-tooltip-placement-rightBottom {
+    .rc-tooltip-arrow {
+      border-right-color: $arrow-color;
+    }
+  }
+  &.rc-tooltip-placement-bottom,
+  &.rc-tooltip-placement-bottomLeft,
+  &.rc-tooltip-placement-bottomRight {
+    .rc-tooltip-arrow {
+      border-bottom-color: $arrow-color;
+    }
+  }
+  &.rc-tooltip-placement-left,
+  &.rc-tooltip-placement-leftTop,
+  &.rc-tooltip-placement-leftBottom {
+    .rc-tooltip-arrow {
+      border-left-color: $arrow-color;
+    }
+  }
+
+  .rc-tooltip-inner {
+    background-color: $background-color;
+    color: #fff;
+    border: none;
+  }
+}
