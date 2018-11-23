@@ -1,0 +1,16 @@
+{
+  "name": "@cater2me-ui/components",
+  "version": "0.1.0",
+  "description": "cater2me core ui components",
+  "author": "cater2me",
+  "homepage": "https://github.com/cater2me/design.cater2.me/tree/master/packages/components",
+  "bugs": "https://github.com/cater2me/design.cater2.me/issues",
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "files": ["dist"],
+  "peerDependencies": {
+    "@cater2me-ui/sass": "^0.1.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.6.0"
+  }
+}

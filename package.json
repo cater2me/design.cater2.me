@@ -4,8 +4,7 @@
   "version": "0.1.0",
   "homepage": "https://github.com/cater2me/design.cater2.me",
   "workspaces": [
-    "components/*",
-    "sass"
+    "packages/*"
   ],
   "scripts": {
     "start": "zeropack-storybook start",
@@ -15,13 +14,13 @@
     "node": "^8"
   },
   "dependencies": {
-    "bootstrap-sass": "^3.3.7",
     "prop-types": "^15.6.2",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0"
+    "react": "^16.6.0"
   },
   "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
     "lerna": "^3.4.3",
+    "react-dom": "^16.6.0",
     "zeropack-core": "^0.1.0-alpha.0",
     "zeropack-preset-coffee": "^0.1.0-alpha.0",
     "zeropack-storybook": "^0.1.0-alpha.0"
