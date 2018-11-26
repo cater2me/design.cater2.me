@@ -15,7 +15,8 @@
     "lodash": "^4.17.11",
     "prop-types": "^15.6.0",
     "rc-tooltip": "3.7.3",
-    "react-onclickoutside": "^6.7.1"
+    "react-onclickoutside": "^6.7.1",
+    "react-tabs": "^2.3.0"
   },
   "devDependencies": {
     "bootstrap-sass": "^3.3",

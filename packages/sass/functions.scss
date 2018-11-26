@@ -1,7 +1,3 @@
-@function color($name, $type: 'common') {
-  @return map-get(map-get($colors, $type), $name);
-}
-
 @function get-list-item($label, $list) {
   @each $list-item in $list {
     @if nth($list-item, 1) == $label {
@@ -11,12 +7,32 @@
   @return null;
 }
 
+@function map-has-nested-keys($map, $keys...) {
+  @each $key in $keys {
+    @if not map-has-key($map, $key) {
+      @return false;
+    }
+    $map: map-get($map, $key);
+  }
+
+  @return true;
+}
+
 @function map-deep-get($map, $keys...) {
   @each $key in $keys {
     $map: map-get($map, $key);
   }
 
   @return $map;
+}
+
+@function color($layers...) {
+  @if not map-has-nested-keys($colors, $layers...) {
+    @error "No layer found for `#{inspect($layers)}` in $colors map.
+          See available list:
+            `#{inspect($colors)}";
+  }
+  @return map-deep-get($colors, $layers...);
 }
 
 @function z($layers...) {

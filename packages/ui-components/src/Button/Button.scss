@@ -15,7 +15,7 @@
   &.btn-round {
     border-radius: 2.5rem;
     &:focus {
-      box-shadow: 0 1px 2px 0 color(gray-light-10, background);
+      box-shadow: 0 1px 2px 0 color(background, gray-light-10);
     }
   }
 
@@ -30,12 +30,12 @@
   }
 
   &.btn-blue {
-    background-color: color(main-blue, background);
+    background-color: color(background, main-blue);
     color: #fff;
 
     &:focus,
     &:hover {
-      box-shadow: 0 0 1px 1px darken(color(main-blue, background), 10%);
+      box-shadow: 0 0 1px 1px darken(color(background, main-blue), 10%);
     }
   }
 
@@ -45,41 +45,41 @@
   }
 
   &.btn-yellow {
-    background-color: color(main-yellow, background);
+    background-color: color(background, main-yellow);
 
     &:focus,
     &:hover {
-      box-shadow: 0 0 1px 1px darken(color(main-yellow, background), 10%);
+      box-shadow: 0 0 1px 1px darken(color(background, main-yellow), 10%);
     }
   }
 
   &.btn-yellow.c2me-btn-shadow {
-    box-shadow: 0 1px 2px 0 color(gray-light-10, background);
+    box-shadow: 0 1px 2px 0 color(background, gray-light-10);
   }
 
   &.btn-green {
-    background-color: color(main-green, background);
+    background-color: color(background, main-green);
     color: #fff;
 
     &:hover {
-      box-shadow: 0 0 1px 1px darken(color(main-green, background), 10%);
+      box-shadow: 0 0 1px 1px darken(color(background, main-green), 10%);
     }
   }
 
   &.btn-transparent {
     background-color: transparent;
-    box-shadow: 0 0 0 0.5px color(gray-light-10, background);
+    box-shadow: 0 0 0 0.5px color(background, gray-light-10);
     color: #000;
 
     &:focus,
     &:hover {
-      box-shadow: 0 0 1px 1px darken(color(main-yellow, background), 10%);
+      box-shadow: 0 0 1px 1px darken(color(background, main-yellow), 10%);
     }
   }
 
   &.c2me-btn-disabled {
     opacity: 0.8;
-    background-color: color(gray-light-20, background);
+    background-color: color(background, gray-light-20);
     color: #000;
     cursor: not-allowed;
   }

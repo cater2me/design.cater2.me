@@ -1,0 +1,67 @@
+@import '~react-tabs/style/react-tabs';
+@import '~@cater2me/sass';
+
+@mixin theme($theme) {
+  &.theme-#{$theme} {
+    @content;
+  }
+}
+
+.c2me-tabs {
+  @include theme(gray) {
+    .react-tabs__tab-list {
+      border-bottom: none;
+
+      .react-tabs__tab {
+        background-color: color(background, gray-default);
+        color: color(text, gray-default);
+        border-radius: 0;
+        border-left: 1px solid color(text, gray-default);
+
+        &:first-child {
+          border-left: none;
+        }
+
+        &--selected {
+          background-color: color(background, black-light);
+          color: #fff;
+          border: none;
+        }
+      }
+    }
+  }
+
+  @include theme(yellow) {
+    .react-tabs__tab-list {
+      border-bottom: none;
+
+      .react-tabs__tab {
+        background-color: #fff;
+        color: #333;
+        border-radius: 4px 4px 0 0;
+        border: 1px solid rgba(0,0,0,.16);
+        border-bottom: none;
+
+        &:not(:first-child) {
+          margin-left: 5px;
+        }
+
+        &--selected {
+          background-color: color(background, red-light-10);
+          border: none;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  &.autofill {
+    .react-tabs__tab-list {
+      display: flex;
+
+      .react-tabs__tab {
+        flex: 1 0;
+      }
+    }
+  }
+}

@@ -11,15 +11,15 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: color(gray-light-30, background);
+    background-color: color(background, gray-light-30);
     border-radius: 4px;
 
     &:hover {
-      background-color: color(gray-light-20, background);
+      background-color: color(background, gray-light-20);
     }
 
     &:active {
-      background-color: color(gray-light-20, background);
+      background-color: color(background, gray-light-20);
     }
   }
 }
