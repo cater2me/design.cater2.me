@@ -7,11 +7,15 @@
   "bugs": "https://github.com/cater2me/design.cater2.me/issues",
   "license": "UNLICENSED",
   "main": "dist/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "classnames": "2.2.5",
+    "lodash": "^4.17.11",
     "prop-types": "^15.6.0",
-    "rc-tooltip": "3.7.3"
+    "rc-tooltip": "3.7.3",
+    "react-onclickoutside": "^6.7.1"
   },
   "devDependencies": {
     "bootstrap-sass": "^3.3",

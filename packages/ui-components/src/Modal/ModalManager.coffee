@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import {findIndex} from 'lodash/fp'
 
 DEFAULT_CONTAINER_CLASS = 'c2me-modal-open'
 
@@ -15,7 +15,8 @@ class ModalManager
 
   add: (modal, container, className) =>
     modalIdx = @modals.indexOf(modal)
-    containerIdx = _.findIndex(@containers, (c) -> c.container is container)
+    findContainerIdx = findIndex (c) -> c.container is container
+    containerIdx = findContainerIdx @containers
     unless modalIdx is -1
       return modalIdx
 
@@ -38,9 +39,8 @@ class ModalManager
     modalIdx = @modals.indexOf(modal)
     return if modalIdx is -1
 
-    containerIdx = _.findIndex(@containers, (c) ->
-      c.modals.indexOf(modal) isnt -1
-    )
+    findContainerIdx = findIndex (c) -> c.modals.indexOf(modal) isnt -1
+    containerIdx = findContainerIdx @containers
     container = @containers[containerIdx]
     container.modals.splice(container.modals.indexOf(modal), 1)
     @modals.splice(modalIdx, 1)
