@@ -28,6 +28,7 @@ class Dialog extends React.PureComponent
 
   @defaultProps:
     backdrop: true
+    size: 'md'
 
   getContainer: ->
     if typeof @props.container is 'function'
