@@ -1,0 +1,117 @@
+// @import "~Styles/variables";
+@import '~@cater2me/sass';
+
+$border-color: rgb(229, 229, 229);
+$errors-color: rgb(169, 68, 66);
+
+.c2me-modal-open {
+  // prevent scrolling on container
+  overflow-y: hidden;
+}
+
+.c2me-dialog {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: z(modal, main);
+
+
+  .c2me-dialog-backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: z(modal, backdrop);
+  }
+
+  .c2me-dialog-autosize {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .c2me-dialog-content {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $border-color;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 5px 15px;
+    border-radius: 5px;
+    position: relative;
+    max-height: 85%;
+    z-index: z(modal, main) + 1;
+
+    &.has-errors {
+      border-color: $errors-color;
+      box-shadow: lighten($errors-color, 30%) 0 5px 15px;
+    }
+
+    $size-list: sm, md, lg;
+
+    @each $size in $size-list {
+      $length: length($size-list);
+      $index: index($size-list, $size);
+      $width: ((100 / $length) - $length) * $index;
+      &.#{$size} {
+        width: $width + %;
+      }
+    }
+  }
+
+  &__header,
+  &__footer {
+    min-height: 45px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &__header {
+    padding: 10px;
+    border-bottom: 1px solid $border-color;
+    z-index: z(modal, header);
+
+    &__title {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    &__close {
+      cursor: pointer;
+      color: darken($border-color, 50%);
+      position: absolute;
+      font-size: 20px;
+      line-height: 1;
+      display: inline-flex;
+      align-items: center;
+      right: 8px;
+      top: 8px;
+    }
+  }
+
+  &__body {
+    padding: 10px;
+    overflow: auto;
+    position: relative;
+  }
+
+  &__footer {
+    padding: 10px;
+    border-top: 1px solid $border-color;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

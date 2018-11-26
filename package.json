@@ -13,14 +13,8 @@
   "engines": {
     "node": "^8"
   },
-  "dependencies": {
-    "prop-types": "^15.6.2",
-    "react": "^16.6.0"
-  },
   "devDependencies": {
-    "bootstrap-sass": "^3.3.7",
     "lerna": "^3.4.3",
-    "react-dom": "^16.6.0",
     "zeropack-core": "^0.1.0-alpha.0",
     "zeropack-preset-coffee": "^0.1.0-alpha.0",
     "zeropack-storybook": "^0.1.0-alpha.0"

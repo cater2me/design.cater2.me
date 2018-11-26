@@ -10,11 +10,18 @@
   "files": ["dist"],
   "dependencies": {
     "classnames": "2.2.5",
+    "prop-types": "^15.6.0",
     "rc-tooltip": "3.7.3"
   },
+  "devDependencies": {
+    "bootstrap-sass": "^3.3",
+    "react": "^16.6",
+    "react-dom": "^16.6"
+  },
   "peerDependencies": {
-    "@cater2me-ui/sass": "^0.1.0",
-    "prop-types": "^15.6.0",
-    "react": "^16.6.0"
+    "@cater2me/sass": "^0.1",
+    "bootstrap-sass": "^3.3",
+    "react": "^16.6",
+    "react-dom": "^16.6"
   }
 }

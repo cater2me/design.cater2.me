@@ -11,7 +11,7 @@ storiesOf('Components|Tooltip', module)
     <React.Fragment>
       implement on &nbsp;
       <b>
-        <a 
+        <a
           src="https://github.com/react-component/tooltip"
           target="_blank"
         >
