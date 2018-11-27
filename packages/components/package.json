@@ -1,9 +1,9 @@
 {
-  "name": "@cater2me/ui-components",
+  "name": "@cater2me/components",
   "version": "0.1.0",
-  "description": "cater2me core ui components",
+  "description": "cater2me core components",
   "author": "cater2me",
-  "homepage": "https://github.com/cater2me/design.cater2.me/tree/master/packages/ui-components",
+  "homepage": "https://github.com/cater2me/design.cater2.me/tree/master/packages/components",
   "bugs": "https://github.com/cater2me/design.cater2.me/issues",
   "license": "UNLICENSED",
   "main": "dist/index.js",
