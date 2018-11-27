@@ -1,6 +1,6 @@
 import React from 'react';
-import { storiesOf, forceReRender } from '@storybook/react';
-import { withKnobs, boolean, select } from '@storybook/addon-knobs';
+import {storiesOf, forceReRender} from '@storybook/react';
+import {withKnobs, boolean, select} from '@storybook/addon-knobs';
 
 import Button from '../Button'
 import Modal from './Modal'

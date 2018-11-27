@@ -1,0 +1,12 @@
+{
+  "name": "@cater2me/storybook",
+  "version": "0.1.0",
+  "description": "cater2me storybook addons, utils, etc",
+  "author": "cater2me",
+  "homepage": "https://github.com/cater2me/design.cater2.me/tree/master/packages/storybook-utils",
+  "bugs": "https://github.com/cater2me/design.cater2.me/issues",
+  "license": "UNLICENSED",
+  "peerDependencies": {
+    "react": "^16.0"
+  }
+}
