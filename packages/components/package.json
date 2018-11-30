@@ -1,15 +1,12 @@
 {
   "name": "@cater2me/components",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "cater2me core components",
   "author": "cater2me",
   "homepage": "https://github.com/cater2me/design.cater2.me/tree/master/packages/components",
   "bugs": "https://github.com/cater2me/design.cater2.me/issues",
   "license": "UNLICENSED",
-  "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
+  "main": "src/index.js",
   "dependencies": {
     "classnames": "^2.2.5",
     "lodash": "^4.17.11",
