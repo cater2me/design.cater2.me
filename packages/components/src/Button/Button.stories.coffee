@@ -6,6 +6,7 @@ import { withTheme } from '@cater2me/storybook/addons'
 
 import Button from './Button'
 
+# comment for testing publish
 storiesOf('Components|Button', module)
   .addDecorator withKnobs
   .addDecorator withTheme
