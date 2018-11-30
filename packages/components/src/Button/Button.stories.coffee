@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 
-import { withTheme } from '@cater2me/storybook/addons'
+import { withTheme } from '@cater2.me/storybook/addons'
 
 import Button from './Button'
 

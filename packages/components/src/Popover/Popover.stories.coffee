@@ -3,8 +3,8 @@ import {storiesOf, forceReRender} from '@storybook/react';
 import {withKnobs, select} from '@storybook/addon-knobs';
 import Popper from 'popper.js'
 
-import {withMargin} from '@cater2me/storybook/addons'
-import {useToggle} from '@cater2me/storybook/utils'
+import {withMargin} from '@cater2.me/storybook/addons'
+import {useToggle} from '@cater2.me/storybook/utils'
 
 import Popover from './Popover'
 

@@ -1,5 +1,5 @@
 {
-  "name": "@cater2me/components",
+  "name": "@cater2.me/components",
   "version": "0.1.5",
   "description": "cater2me core components",
   "author": "cater2me",
@@ -26,8 +26,8 @@
     "react-dom": "^16.6"
   },
   "peerDependencies": {
-    "@cater2me/sass": "^0.1",
-    "@cater2me/storybook-utils": "^0.1",
+    "@cater2.me/sass": "^0.1",
+    "@cater2.me/storybook-utils": "^0.1",
     "bootstrap-sass": "^3.3",
     "react": "^16.0",
     "react-dom": "^16.0"
