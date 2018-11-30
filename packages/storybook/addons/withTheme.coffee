@@ -4,8 +4,8 @@ import {select} from '@storybook/addon-knobs';
 export themes = ['external', 'internal']
 
 export default (storyFn) ->
-    theme = select('theme', themes, 'external')
+  theme = select('theme', themes, 'external')
 
-    <div className={"theme-#{theme}"}>
-      {storyFn()}
-    </div>
+  <div className={"theme-#{theme}"}>
+    {storyFn()}
+  </div>
