@@ -1,7 +1,7 @@
 {
   "name": "@cater2.me/storybook",
   "private": true,
-  "version": "0.1.3",
+  "version": "0.1.6",
   "description": "cater2me storybook addons, utils, etc",
   "author": "cater2me",
   "homepage": "https://github.com/cater2me/design.cater2.me/tree/master/packages/storybook-utils",
