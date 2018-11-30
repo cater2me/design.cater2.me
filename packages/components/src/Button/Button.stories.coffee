@@ -1,38 +1,35 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
+import { withKnobs } from '@storybook/addon-knobs';
 
-import {withTheme} from '@cater2me/storybook/addons'
+import { withTheme } from '@cater2me/storybook/addons'
 
 import Button from './Button'
 
 storiesOf('Components|Button', module)
-  .addDecorator withTheme 'internal'
+  .addDecorator withKnobs
+  .addDecorator withTheme
   .add 'Default', ->
     <Button>Default</Button>
   .add 'All buttons', ->
     <React.Fragment>
-      <Button kind="square" color="yellow">
-        Square Large Yellow
+      <Button kind="square" color="transparent">
+        Square Large Transparent
       </Button>
       <br/><br/>
       <Button color="yellow">
         Yellow Button
       </Button>
       <br/><br/>
-      <Button color="light">
-        Light Button
-      </Button>
-      <br/><br/>
-      <Button color="blue">
-        Blue Button
-      </Button>
-      <br/><br/>
       <Button color="green">
         Green Button
       </Button>
       <br/><br/>
-      <Button color="transparent">
-        Transparent Button
+      <Button color="red">
+        Red Button
+      </Button>
+      <br/><br/>
+      <Button color="blue">
+        Blue Button
       </Button>
     </React.Fragment>
