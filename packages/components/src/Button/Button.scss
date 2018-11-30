@@ -19,42 +19,28 @@
     }
   }
 
-  &.btn-white {
-    color: #283AF9;
-    background-color: transparent;
-
-    &:focus,
-    &:hover {
-      box-shadow: none;
-    }
+  &.c2me-btn-disabled {
+    background-color: color(background, gray-light-20);
+    opacity: 0.8;
+    color: #000;
+    cursor: not-allowed;
   }
 
-  &.btn-blue {
-    background-color: color(background, main-blue);
-    color: #fff;
+  // colors
+  @each $color in (yellow, green, red, blue) {
+    &.btn-#{$color} {
 
-    &:focus,
-    &:hover {
-      box-shadow: 0 0 1px 1px darken(color(background, main-blue), 10%);
-    }
-  }
+      @include themify {
+        background-color: theme-color($color);
 
-  &.btn-white.c2me-btn-disabled {
-    background-color: transparent;
-    color: #283AF9;
-  }
+        &:hover,
+        &:focus {
+          background-color: lighten(theme-color($color), 8.2%);
+        }
 
-  &.btn-yellow {
-    @include themify {
-      background-color: theme-color(yellow);
-
-      &:hover,
-      &:focus {
-        background-color: lighten(theme-color(yellow), 8.2%);
-      }
-
-      &:active {
-        background-color: darken(theme-color(yellow), 11.8%);
+        &:active {
+          background-color: darken(theme-color($color), 11.8%);
+        }
       }
     }
   }
@@ -64,11 +50,25 @@
   }
 
   &.btn-green {
-    background-color: color(background, main-green);
     color: #fff;
+  }
 
+  &.btn-blue {
+    color: #fff;
+  }
+
+  &.btn-white {
+    color: #283AF9;
+    background-color: transparent;
+
+    &:focus,
     &:hover {
-      box-shadow: 0 0 1px 1px darken(color(background, main-green), 10%);
+      box-shadow: none;
+    }
+
+    &.c2me-btn-disabled {
+      background-color: transparent;
+      color: #283AF9;
     }
   }
 
@@ -81,12 +81,5 @@
     &:hover {
       box-shadow: 0 0 1px 1px darken(color(background, main-yellow), 10%);
     }
-  }
-
-  &.c2me-btn-disabled {
-    opacity: 0.8;
-    background-color: color(background, gray-light-20);
-    color: #000;
-    cursor: not-allowed;
   }
 }

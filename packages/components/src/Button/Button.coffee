@@ -23,7 +23,7 @@ Button = ({href, children, size, className, kind, color, shadow, disabled, ...re
 Button.propTypes =
   kind: PropTypes.oneOf(['square', 'round']).isRequired
   size: PropTypes.oneOf(['sm', 'md', 'lg']).isRequired
-  color: PropTypes.oneOf(['white', 'light', 'yellow', 'blue', 'green', 'transparent']).isRequired
+  color: PropTypes.oneOf(['yellow', 'green', 'red', 'blue', 'white', 'light', 'transparent']).isRequired
   shadow: PropTypes.bool
   href: PropTypes.string
   className: PropTypes.string
@@ -35,4 +35,3 @@ Button.defaultProps =
   color: 'light'
 
 export default Button
-
