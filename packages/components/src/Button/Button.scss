@@ -45,11 +45,17 @@
   }
 
   &.btn-yellow {
-    background-color: color(background, main-yellow);
+    @include themify {
+      background-color: theme-color(yellow);
 
-    &:focus,
-    &:hover {
-      box-shadow: 0 0 1px 1px darken(color(background, main-yellow), 10%);
+      &:hover,
+      &:focus {
+        background-color: lighten(theme-color(yellow), 8.2%);
+      }
+
+      &:active {
+        background-color: darken(theme-color(yellow), 11.8%);
+      }
     }
   }
 

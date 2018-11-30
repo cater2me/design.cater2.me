@@ -1,5 +1,16 @@
 import React from 'react'
-import {number} from '@storybook/addon-knobs';
+import {select, number} from '@storybook/addon-knobs';
+
+import {themes} from './constants';
+
+export withTheme = (defaultTheme = 'external') ->
+  (storyFn) ->
+    theme = select('theme', themes, defaultTheme)
+    <div
+      className={"theme-#{theme}"}
+    >
+      {storyFn()}
+    </div>
 
 export withMargin = (marginLeft = 0, marginTop = 0, options = {}) ->
   xOptions = {

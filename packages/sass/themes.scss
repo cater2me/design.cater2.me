@@ -1,0 +1,31 @@
+$themes:      (external, internal);
+$themes-colors: (
+  // primary colors
+  yellow:     (#ffd73b, #f0ce4d),
+  dark-grey:  (#3c3e3d, #5e5f61),
+  light-grey: (#eaeaeb, #d1d3d4),
+  white:      (#ffffff, #ffffff),
+
+  // secondary colors
+  green:      (#b4d88a, #5fb484),
+  red:        (#f1625f, #e64945),
+  blue:       (#45c2cc, #1f8be3),
+);
+
+@mixin themify {
+  @for $i from 1 through length($themes) {
+    $theme-index: $i !global;
+    $theme: nth($themes, $i);
+
+    .theme-#{$theme} & {
+      @content;
+    }
+
+    $theme-index: null !global;
+  }
+}
+
+@function theme-color($color-key) {
+  $theme-colors: map-get($themes-colors, $color-key);
+  @return nth($theme-colors, $theme-index);
+}
