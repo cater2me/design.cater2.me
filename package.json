@@ -15,8 +15,8 @@
   },
   "devDependencies": {
     "lerna": "^3.4.3",
-    "zeropack-core": "^0.1.0-alpha.0",
-    "zeropack-preset-coffee": "^0.1.0-alpha.0",
-    "zeropack-storybook": "^0.1.0-alpha.0"
+    "zeropack-core": "^0.1.1-alpha.0",
+    "zeropack-preset-coffee": "^0.1.1-alpha.0",
+    "zeropack-storybook": "^0.1.1-alpha.0"
   }
 }

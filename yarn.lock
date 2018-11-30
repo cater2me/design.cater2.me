@@ -1366,6 +1366,24 @@
     react-inspector "^2.3.0"
     uuid "^3.3.2"
 
+"@storybook/addon-info@^4.0.9":
+  version "4.0.9"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-info/-/addon-info-4.0.9.tgz#4ca3cd32e30e7959bef2bc07dc00a5a9041395d3"
+  integrity sha512-fhenKMloeKbMVg1J6/FOU7fOrxwLUjnuTfO/6dI9pZkmjV8CD2w2x4ZxMQM3ilA3xharuZwYgF5lGfx2O5ZC7Q==
+  dependencies:
+    "@emotion/styled" "^0.10.6"
+    "@storybook/addons" "4.0.9"
+    "@storybook/client-logger" "4.0.8"
+    "@storybook/components" "4.0.9"
+    core-js "2.5.7"
+    global "^4.3.2"
+    marksy "^6.1.0"
+    nested-object-assign "^1.0.1"
+    prop-types "^15.6.2"
+    react-addons-create-fragment "^15.5.3"
+    react-lifecycles-compat "^3.0.4"
+    util-deprecate "^1.0.2"
+
 "@storybook/addon-knobs@^4.0.2":
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-4.0.8.tgz#7d0a9fd47760fdcc629d9838447e441cb643005d"
@@ -1403,6 +1421,16 @@
     global "^4.3.2"
     util-deprecate "^1.0.2"
 
+"@storybook/addons@4.0.9":
+  version "4.0.9"
+  resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-4.0.9.tgz#cfa18fe10ddda454dbbc3aae17562e46d04d3955"
+  integrity sha512-D+RsN1fNywgk46UxG6Lue+p9Egf7/DpgEJtQb6RS+UoyOF24p3FlwWMh36kpRfSSgGqFZ+a0jIKhXuRSr31UNQ==
+  dependencies:
+    "@storybook/channels" "4.0.8"
+    "@storybook/components" "4.0.9"
+    global "^4.3.2"
+    util-deprecate "^1.0.2"
+
 "@storybook/channel-postmessage@4.0.8":
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/@storybook/channel-postmessage/-/channel-postmessage-4.0.8.tgz#76fa539a8eab09f681c9134b3dbffb8233f97d36"
@@ -1426,6 +1454,22 @@
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-4.0.8.tgz#0c0701e64b52538acb0d39412db476549a3d7579"
   integrity sha512-6r6/B2i2sQrDPvOgzo5YgCtSCj3q4E54e6V5fkbrYhSvH7Ro8fwca6Pee0uHbKECT+N8+HzWveV0WKg20TZvIg==
+  dependencies:
+    "@emotion/core" "^0.13.1"
+    "@emotion/provider" "^0.11.2"
+    "@emotion/styled" "^0.10.6"
+    global "^4.3.2"
+    lodash "^4.17.11"
+    prop-types "^15.6.2"
+    react-inspector "^2.3.0"
+    react-split-pane "^0.1.84"
+    react-textarea-autosize "^7.0.4"
+    render-fragment "^0.1.1"
+
+"@storybook/components@4.0.9":
+  version "4.0.9"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-4.0.9.tgz#c5cc9f52768fd7a6078d9601cecacd0e357dc130"
+  integrity sha512-EoPJitDUBkNdg4UiWyrmU6IkpLmJTjJO6KD382isHXA7qCxBJQTPb2m3GXy35KKF510NtJ9H0l4k5x7yg5Wzng==
   dependencies:
     "@emotion/core" "^0.13.1"
     "@emotion/provider" "^0.11.2"
@@ -3207,6 +3251,11 @@ babel-runtime@6.x, babel-runtime@6.x.x, babel-runtime@^6.11.6, babel-runtime@^6.
     core-js "^2.4.0"
     regenerator-runtime "^0.11.0"
 
+babel-standalone@^6.26.0:
+  version "6.26.0"
+  resolved "https://registry.yarnpkg.com/babel-standalone/-/babel-standalone-6.26.0.tgz#15fb3d35f2c456695815ebf1ed96fe7f015b6886"
+  integrity sha1-Ffs9NfLEVmlYFevx7Zb+fwFbaIY=
+
 babel-template@^6.24.1, babel-template@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-template/-/babel-template-6.26.0.tgz#de03e2d16396b069f46dd9fff8521fb1a0e35e02"
@@ -4360,6 +4409,11 @@ copy-to-clipboard@^3.0.8:
   dependencies:
     toggle-selection "^1.0.3"
 
+core-js@2.5.7, core-js@^2.5.7:
+  version "2.5.7"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.7.tgz#f972608ff0cead68b841a16a932d0b183791814e"
+  integrity sha512-RszJCAxg/PP6uzXVXL6BsxSXx/B05oJAQ2vkJRjyjrEcNVycaqOmNb5OTxZPE3xa5gwZduqza6L9JOCenh/Ecw==
+
 core-js@^1.0.0:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
@@ -4374,11 +4428,6 @@ core-js@^2.5.0:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.1.tgz#ae6874dc66937789b80754ff5428df66819ca50b"
   integrity sha1-rmh03GaTd4m4B1T/VCjfZoGcpQs=
-
-core-js@^2.5.7:
-  version "2.5.7"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.7.tgz#f972608ff0cead68b841a16a932d0b183791814e"
-  integrity sha512-RszJCAxg/PP6uzXVXL6BsxSXx/B05oJAQ2vkJRjyjrEcNVycaqOmNb5OTxZPE3xa5gwZduqza6L9JOCenh/Ecw==
 
 core-util-is@~1.0.0:
   version "1.0.2"
@@ -5641,7 +5690,7 @@ faye-websocket@~0.11.0:
   dependencies:
     websocket-driver ">=0.5.1"
 
-fbjs@^0.8.9:
+fbjs@^0.8.4, fbjs@^0.8.9:
   version "0.8.17"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
   integrity sha1-xNWY6taUkRJlPWWIsBpc3Nn5D90=
@@ -6418,7 +6467,7 @@ he@1.1.x:
   resolved "https://registry.yarnpkg.com/he/-/he-1.1.0.tgz#29319d49beec13a9b1f3c4f9b2a6dde4859bb2a7"
   integrity sha1-KTGdSb7sE6mx88T5sqbd5IWbsqc=
 
-he@1.2.x:
+he@1.2.x, he@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
@@ -7844,6 +7893,20 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
+marked@^0.3.12:
+  version "0.3.19"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.19.tgz#5d47f709c4c9fc3c216b6d46127280f40b39d790"
+  integrity sha512-ea2eGWOqNxPcXv8dyERdSr/6FmzvWwzjMxpfGB/sbMccXoct+xY+YukPD+QTUZwyvK7BZwcr4m21WBOW41pAkg==
+
+marksy@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/marksy/-/marksy-6.1.0.tgz#36482148a1115cc78570855f7ebd744bb453d5cc"
+  integrity sha512-xVAuJQxwdAljvFVqlY7CIRewn5YHGvCqeJkY1bbcTBfZV4dNDSZpHWTREb1MNu/oXYzKgg5pmTfE1DIW6M1zrA==
+  dependencies:
+    babel-standalone "^6.26.0"
+    he "^1.1.1"
+    marked "^0.3.12"
+
 material-colors@^1.2.1:
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/material-colors/-/material-colors-1.2.6.tgz#6d1958871126992ceecc72f4bcc4d8f010865f46"
@@ -8282,6 +8345,11 @@ neo-async@^2.5.0:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.5.1.tgz#acb909e327b1e87ec9ef15f41b8a269512ad41ee"
   integrity sha512-3KL3fvuRkZ7s4IFOMfztb7zJp3QaVWnBeGoJlgB38XnCRPj/0tLzzLG5IB8NYOHbJ8g8UGrgZv44GLDk6CxTxA==
+
+nested-object-assign@^1.0.1:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/nested-object-assign/-/nested-object-assign-1.0.3.tgz#5aca69390d9affe5a612152b5f0843ae399ac597"
+  integrity sha512-kgq1CuvLyUcbcIuTiCA93cQ2IJFSlRwXcN+hLcb2qLJwC2qrePHGZZa7IipyWqaWF6tQjdax2pQnVxdq19Zzwg==
 
 next-tick@1:
   version "1.0.0"
@@ -9905,6 +9973,15 @@ rc@^1.2.7:
     ini "~1.3.0"
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
+
+react-addons-create-fragment@^15.5.3:
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/react-addons-create-fragment/-/react-addons-create-fragment-15.6.2.tgz#a394de7c2c7becd6b5475ba1b97ac472ce7c74f8"
+  integrity sha1-o5TefCx77Na1R1uhuXrEcs58dPg=
+  dependencies:
+    fbjs "^0.8.4"
+    loose-envify "^1.3.1"
+    object-assign "^4.1.0"
 
 react-color@^2.14.1:
   version "2.14.1"
@@ -12633,42 +12710,42 @@ yargs@^7.0.0:
     y18n "^3.2.1"
     yargs-parser "^5.0.0"
 
-zeropack-action-build@0.1.0-alpha.0:
-  version "0.1.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/zeropack-action-build/-/zeropack-action-build-0.1.0-alpha.0.tgz#4a48599bf8527571e060ef376fc7473bebf5ad85"
-  integrity sha512-nQ70UWZ4QmG1RHi4hh6DAr7fAHohOIk7+k9tvqdNT+gsFif6IpFRj7fLStAPduM0xPNxZwoZ82u0+bBdqffx8A==
+zeropack-action-build@0.1.1-alpha.0:
+  version "0.1.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/zeropack-action-build/-/zeropack-action-build-0.1.1-alpha.0.tgz#81fa52bfa78bd9d9c502cd08a2ae1bd00614e66a"
+  integrity sha512-d5jA6VvEQxT1xYzFpT8BNaXmHargxc+ToGpOBPTsDXlcMyoDgJ0C5OVGBBYwafOcfD3+jxhhPcRfCre1ULObJw==
   dependencies:
     clean-webpack-plugin "^0.1.19"
-    zeropack-core "0.1.0-alpha.0"
+    zeropack-core "0.1.1-alpha.0"
 
-zeropack-action-serve@0.1.0-alpha.0:
-  version "0.1.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/zeropack-action-serve/-/zeropack-action-serve-0.1.0-alpha.0.tgz#36bcd036d15c25bec045f626fc310051d1aeca90"
-  integrity sha512-Rx7FyXuCyvrQOPq5pBK+gjsF+1POiT56Q4gVmjypie317q9UjtqWzkehCbj57tCQi/sN/zTIJeeV00iQ8eBVfQ==
+zeropack-action-serve@0.1.1-alpha.0:
+  version "0.1.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/zeropack-action-serve/-/zeropack-action-serve-0.1.1-alpha.0.tgz#420f75251997c53d3fc030dda4d1c3550a0f064e"
+  integrity sha512-D2xjnR/2pN05fGiZazgAqYn79r8JstQlY+bLAe4e56xghA5EDUQxQZ1ZQwopy3nleo+yvzUkGHHn01M8cn3wyA==
   dependencies:
     webpack-dev-server "^3.1.1"
-    zeropack-core "0.1.0-alpha.0"
+    zeropack-core "0.1.1-alpha.0"
 
-zeropack-config@0.1.0-alpha.0:
-  version "0.1.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/zeropack-config/-/zeropack-config-0.1.0-alpha.0.tgz#fddae3ba699c8e91d02d74857eb0c5076347dec2"
-  integrity sha512-byIjSO5E+KIBKf2VUPdGHjN84aqBf8tVtvFJ2l7wIeaYajxP+Iq4Yhhp/fLhVyp0VQEwxnc/+qA0zZdB7AHHAw==
+zeropack-config@0.1.1-alpha.0:
+  version "0.1.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/zeropack-config/-/zeropack-config-0.1.1-alpha.0.tgz#c9e9abda59f47fe198ea788ea70c04e28150d382"
+  integrity sha512-r3lPH+50xd+nOJsFyyA9BPO5BpWU71h3FaU9IT1IfgtuRQ7jxaB2xOswV4yBz3iou/OW3U2h8idC1E2K12ebMQ==
   dependencies:
     lodash.defaultsdeep "^4.6.0"
-    zeropack-core "0.1.0-alpha.0"
+    zeropack-core "0.1.1-alpha.0"
 
-zeropack-core@0.1.0-alpha.0, zeropack-core@^0.1.0-alpha.0:
-  version "0.1.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/zeropack-core/-/zeropack-core-0.1.0-alpha.0.tgz#3cda2e5165cc277281cdb06e68bacdfbad410196"
-  integrity sha512-kiWdDIyjYiQHXWlYwt9Q/b8O6Ir3R5HdACg2HuoBfFitUoFXAUPtp415X9bWuxlcR4sgH14BO5n1h4XXpPd6+w==
+zeropack-core@0.1.1-alpha.0, zeropack-core@^0.1.1-alpha.0:
+  version "0.1.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/zeropack-core/-/zeropack-core-0.1.1-alpha.0.tgz#4aae2752ab8667eb8dcd04bb20f35986d5bfb891"
+  integrity sha512-/ri8F+nrEmSeNGHfEpnwN+Ttb01Vof3TSuuyIQsjfMroRElYou1cNoE8ETbPKGdAVzQ0DdGiRmksI0pz+5m1Uw==
   dependencies:
     bundle-loader "^0.5.5"
     coffeescript "^2.3.0"
     dotenv "^4.0.0"
     webpack "^4.1.1"
-    zeropack-action-build "0.1.0-alpha.0"
-    zeropack-action-serve "0.1.0-alpha.0"
-    zeropack-config "0.1.0-alpha.0"
+    zeropack-action-build "0.1.1-alpha.0"
+    zeropack-action-serve "0.1.1-alpha.0"
+    zeropack-config "0.1.1-alpha.0"
     zeropack-fix-schema "^0.0.10"
 
 zeropack-fix-schema@^0.0.10:
@@ -12681,79 +12758,80 @@ zeropack-plugin-app-data@^0.0.10:
   resolved "https://registry.yarnpkg.com/zeropack-plugin-app-data/-/zeropack-plugin-app-data-0.0.10.tgz#2282f24e34f41f47f9e3ef2b21be8778bf85f3dc"
   integrity sha512-2yUwTY1Z3tOx/p63hlMCMqpDJrONOPoY5HYRWROmRslIru96lwxzbW94on8bHBgjFJnQTXqFyJVl1w6mxEh+gQ==
 
-zeropack-plugin-extract-text@0.1.0-alpha.0:
-  version "0.1.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/zeropack-plugin-extract-text/-/zeropack-plugin-extract-text-0.1.0-alpha.0.tgz#33f817a6795059802ee5fa9a59387ac7d05b702e"
-  integrity sha512-OanAqLJMmZw3huyuTd8tEJWjrIF8z7sE4MhfBxd5e6M+3HDYbqOZBujPZCH9FlWI3mVv3CRhnPKyo/D/daSFCQ==
+zeropack-plugin-extract-text@0.1.1-alpha.0:
+  version "0.1.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/zeropack-plugin-extract-text/-/zeropack-plugin-extract-text-0.1.1-alpha.0.tgz#4dd439cc77d6286390faeb4bae227bc6e95ef57e"
+  integrity sha512-3KXuPP/Xxu99fRoU1qDAxe0kvo7JFnv4dUWeEkwSBQCmoyfmT7n6zV7v1CUBKier6obVguHHIs4zsKesMSqlWQ==
   dependencies:
     extract-text-webpack-plugin "^4.0.0-beta.0"
-    zeropack-core "0.1.0-alpha.0"
+    zeropack-core "0.1.1-alpha.0"
 
-zeropack-plugin-git-rev@0.1.0-alpha.0:
-  version "0.1.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/zeropack-plugin-git-rev/-/zeropack-plugin-git-rev-0.1.0-alpha.0.tgz#c2da269a96582b04f8f773d84b35513f739de501"
-  integrity sha512-pykuO0aohEaGLuUkqHEsN6P9mnDJWtvxC1n1LO+HMPER12g+60q0PqKWRxLHdxzdRTXo26o5l8Pn7rBaIwF5uQ==
+zeropack-plugin-git-rev@0.1.1-alpha.0:
+  version "0.1.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/zeropack-plugin-git-rev/-/zeropack-plugin-git-rev-0.1.1-alpha.0.tgz#eda012abad1e52ebe17260a0949096813aed84b5"
+  integrity sha512-5tzCwsdnYjMCCLiNuHnFLjrEybbuSn3ae7h8zJkU3hWay8RFlK436mz4rAgSqIsG9WEGFwkC7CuLajfRf2bAVg==
   dependencies:
     git-rev-sync "^1.10.0"
-    zeropack-core "0.1.0-alpha.0"
+    zeropack-core "0.1.1-alpha.0"
 
-zeropack-plugin-happypack@0.1.0-alpha.0:
-  version "0.1.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/zeropack-plugin-happypack/-/zeropack-plugin-happypack-0.1.0-alpha.0.tgz#6591c375b08daae4e0dbbaa826ad6e678c530b1f"
-  integrity sha512-8CKb6lEuZV28ee33mWgyQtWfcIQg8RV9Ef2U7/h4nFl4fPtuDPF/wYm6+ocO3BcOsQMqie/JYdLh6E25wx4l0w==
+zeropack-plugin-happypack@0.1.1-alpha.0:
+  version "0.1.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/zeropack-plugin-happypack/-/zeropack-plugin-happypack-0.1.1-alpha.0.tgz#37c73ccfd10e047279ce0686a1b0d1e9b11de32a"
+  integrity sha512-L39/eOShNCSs+QBLrEnkindoDVHWr9Dk7o51ZipAwdmdKB8a0hNAmRlNF/oHg/41gQLt+dAARilm/qM2cSsniw==
   dependencies:
     cache-loader "^1.2.2"
     happypack "^5.0.0-beta.1"
-    zeropack-core "0.1.0-alpha.0"
+    zeropack-core "0.1.1-alpha.0"
 
-zeropack-plugin-index-html@0.1.0-alpha.0:
-  version "0.1.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/zeropack-plugin-index-html/-/zeropack-plugin-index-html-0.1.0-alpha.0.tgz#1e0babb554b50fa6c606f1165f6e8e3bdccaec20"
-  integrity sha512-xqwjrqUI1XmNd6RYKtCT5FEiEuoA65yY4Tw413ZytpREDirE/DoZb0m2bBExxnm0WhSN2jcXm3AyogNvJTNuWA==
+zeropack-plugin-index-html@0.1.1-alpha.0:
+  version "0.1.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/zeropack-plugin-index-html/-/zeropack-plugin-index-html-0.1.1-alpha.0.tgz#a963e99937176f35f5c94bdb354652de206964c7"
+  integrity sha512-SD+cZ45Gv5qi/tOK27kqwja1pP0fDHvJyi3cfcZowmhb8xsRRe9kuCat3hiqEfTd8thLF7q2IXW+LnzHZRXFgQ==
   dependencies:
     html-webpack-plugin "^3.0.6"
-    zeropack-core "0.1.0-alpha.0"
+    zeropack-core "0.1.1-alpha.0"
 
-zeropack-plugin-progress-bar@0.1.0-alpha.0:
-  version "0.1.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/zeropack-plugin-progress-bar/-/zeropack-plugin-progress-bar-0.1.0-alpha.0.tgz#1d3b1110e20139eaafb73642fea8aab6718435c6"
-  integrity sha512-XpdxlYopayYtGQGK+c9KUp6RhZ9eCEnb4DS4Vk9tPhne0PQSDMFyDbjWI28q2qgLbK/jKnhik5v2xGQ6jsfBvA==
+zeropack-plugin-progress-bar@0.1.1-alpha.0:
+  version "0.1.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/zeropack-plugin-progress-bar/-/zeropack-plugin-progress-bar-0.1.1-alpha.0.tgz#2bda3f0b361a486fd4984a97b4907c7da0721052"
+  integrity sha512-8Rz2gOjCzH0dkAixRpYBndUc/mcLZ/g4DH7QzpmM5siO5FPe3GEjx6hgkg7cjZgbcTuf4HJUIl0SDbCp6uAWFw==
   dependencies:
     readline "^1.3.0"
-    zeropack-core "0.1.0-alpha.0"
+    zeropack-core "0.1.1-alpha.0"
 
-zeropack-preset-coffee@^0.1.0-alpha.0:
-  version "0.1.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/zeropack-preset-coffee/-/zeropack-preset-coffee-0.1.0-alpha.0.tgz#ca99670e3403349a9f608bb02092ee3ca1fdb601"
-  integrity sha512-BQqbn+1kEipmhR3tceuaSqUe5lePn3J7l87dmTneDxh10sKDXd+FhCMd//JllBc/uH1ocEOqFKjiF7nA3KEY0g==
+zeropack-preset-coffee@^0.1.1-alpha.0:
+  version "0.1.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/zeropack-preset-coffee/-/zeropack-preset-coffee-0.1.1-alpha.0.tgz#edb48d5bc9c7c3ca9af790e7910d3fc1ba487706"
+  integrity sha512-GTo+8roy8Ear2NPknV9JbbtUSL8NqIQ4MlDCzGkHM6FuRewqYjvfQSbPCY8LYKl7LyE5ER6TaQ0J7JyFq7aVHg==
   dependencies:
-    zeropack-core "0.1.0-alpha.0"
+    zeropack-core "0.1.1-alpha.0"
     zeropack-plugin-app-data "^0.0.10"
-    zeropack-plugin-extract-text "0.1.0-alpha.0"
-    zeropack-plugin-git-rev "0.1.0-alpha.0"
-    zeropack-plugin-happypack "0.1.0-alpha.0"
-    zeropack-plugin-index-html "0.1.0-alpha.0"
-    zeropack-plugin-progress-bar "0.1.0-alpha.0"
-    zeropack-support-babel "0.1.0-alpha.0"
-    zeropack-support-coffeescript "0.1.0-alpha.0"
-    zeropack-support-css "0.1.0-alpha.0"
-    zeropack-support-file "0.1.0-alpha.0"
-    zeropack-support-sass "0.1.0-alpha.0"
+    zeropack-plugin-extract-text "0.1.1-alpha.0"
+    zeropack-plugin-git-rev "0.1.1-alpha.0"
+    zeropack-plugin-happypack "0.1.1-alpha.0"
+    zeropack-plugin-index-html "0.1.1-alpha.0"
+    zeropack-plugin-progress-bar "0.1.1-alpha.0"
+    zeropack-support-babel "0.1.1-alpha.0"
+    zeropack-support-coffeescript "0.1.1-alpha.0"
+    zeropack-support-css "0.1.1-alpha.0"
+    zeropack-support-file "0.1.1-alpha.0"
+    zeropack-support-sass "0.1.1-alpha.0"
 
-zeropack-storybook@^0.1.0-alpha.0:
-  version "0.1.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/zeropack-storybook/-/zeropack-storybook-0.1.0-alpha.0.tgz#66e35823482ec7c0716bfee7f88fbcf79ba1c904"
-  integrity sha512-n3osjFRUwEHnRLNGRWHnPxCqkwuEJBeexAVYbS7GtwZ08XnQarRX157aGfnCgimTTbwynupb8SCfdDwf0Kljog==
+zeropack-storybook@^0.1.1-alpha.0:
+  version "0.1.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/zeropack-storybook/-/zeropack-storybook-0.1.1-alpha.0.tgz#d4955c4b16745158df62d02904275882d8abb77a"
+  integrity sha512-4gdl3oxZbxKOi4Afw8cLiMHfPfiL3DsD/fyS9y29YD4aAzOvDtbT71JWyM/QFWATrunwtuEm1rI4QwWJdFsQdA==
   dependencies:
     "@storybook/addon-actions" "^4.0.2"
+    "@storybook/addon-info" "^4.0.9"
     "@storybook/addon-knobs" "^4.0.2"
     "@storybook/addon-options" "^4.0.2"
     "@storybook/react" "^4.0.2"
 
-zeropack-support-babel@0.1.0-alpha.0:
-  version "0.1.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/zeropack-support-babel/-/zeropack-support-babel-0.1.0-alpha.0.tgz#e9fec057e43e26dd2d434851b54084c88be331a9"
-  integrity sha512-CR4Tto88xNQRr8ab81hu8KXoewOPNWyRfatsST8C9RFmilbGqGX7BMbODvcSKexsZeKP3PZwOfNW1z/2aZi5QQ==
+zeropack-support-babel@0.1.1-alpha.0:
+  version "0.1.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/zeropack-support-babel/-/zeropack-support-babel-0.1.1-alpha.0.tgz#c417195954de4a8d6beab8355dff2a630eb40eed"
+  integrity sha512-b8TVNLYVEIEcn4kI/DprM6O19hfsALrpHfdWChmOclUcxDzbCFOJVSF4gsKqA5awUvFXwBwUnpVUt2qhIyoYGw==
   dependencies:
     babel-core "^6.26.3"
     babel-loader "^7.1.4"
@@ -12762,43 +12840,43 @@ zeropack-support-babel@0.1.0-alpha.0:
     babel-preset-env "^1.6.1"
     babel-preset-react "^6.24.1"
     babel-runtime "^6.26.0"
-    zeropack-core "0.1.0-alpha.0"
+    zeropack-core "0.1.1-alpha.0"
 
-zeropack-support-coffeescript@0.1.0-alpha.0:
-  version "0.1.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/zeropack-support-coffeescript/-/zeropack-support-coffeescript-0.1.0-alpha.0.tgz#25dfa13e5acb517dc834faaece2bf83179bb18e1"
-  integrity sha512-dIwZKICrizDfZGUq28gmEdnRhQG0Y4lHQxbrOR0JImdzqXqECijxwShVK8m6WG53GbLbguI4Q1NZ3sGKwBroLw==
+zeropack-support-coffeescript@0.1.1-alpha.0:
+  version "0.1.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/zeropack-support-coffeescript/-/zeropack-support-coffeescript-0.1.1-alpha.0.tgz#63661681c4a8ad5c437697f072b43ecca7e57583"
+  integrity sha512-dOneXDXyO/j6yh9QWkpNdmMKMIoqXKZH5OsK1lAUen2k/tZ1rSzX3HK+PmP2pYZA7HyjMeCL1POpK7+Z7u7z5Q==
   dependencies:
     coffee-loader "^0.9.0"
     coffeescript "^2.3.0"
-    zeropack-core "0.1.0-alpha.0"
-    zeropack-support-babel "0.1.0-alpha.0"
+    zeropack-core "0.1.1-alpha.0"
+    zeropack-support-babel "0.1.1-alpha.0"
 
-zeropack-support-css@0.1.0-alpha.0:
-  version "0.1.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/zeropack-support-css/-/zeropack-support-css-0.1.0-alpha.0.tgz#0cb453c38dc79effb637376b5d8664f321e7e771"
-  integrity sha512-qLpPXagL3+Qr5SiFjKVNfWpZOJFLV47TJ7dYNcInhIWJVe2uryv19a0HAm9VnpTjS8W86pG0JbZLKiRo6YeaVg==
+zeropack-support-css@0.1.1-alpha.0:
+  version "0.1.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/zeropack-support-css/-/zeropack-support-css-0.1.1-alpha.0.tgz#99044c80b5a4043da0dbd19dbfe8e861fe5213f2"
+  integrity sha512-F42mNxTBfqq+ZB4T0YePAO6ij1JL//xyYFeoC4Md0fCoKx2AQdNbeTKW9JnE+dHbKyRcturEbWOYpB1wAbWsBg==
   dependencies:
     autoprefixer "^8.5.0"
     css-loader "^0.28.10"
     postcss-loader "^2.1.5"
     style-loader "^0.20.3"
-    zeropack-core "0.1.0-alpha.0"
+    zeropack-core "0.1.1-alpha.0"
 
-zeropack-support-file@0.1.0-alpha.0:
-  version "0.1.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/zeropack-support-file/-/zeropack-support-file-0.1.0-alpha.0.tgz#5fb1e6e029f43478e3425021fb8949f1fa1ba075"
-  integrity sha512-YAAlis9PGqOBEFNW/hVYuBmu4dapyN7N59tEYGm5/m/jXK3MMVaVA3vr6yZfFxPUT2IEL7l7MfS+C+/TP9Vrdg==
+zeropack-support-file@0.1.1-alpha.0:
+  version "0.1.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/zeropack-support-file/-/zeropack-support-file-0.1.1-alpha.0.tgz#a6557a5800dcab90d51a4c021c3d1ebc1a3ef7b0"
+  integrity sha512-ahfTC7TzbTj5Rkk2wV7I/FL/P9LWLTNgr0+V58X5qmzYwXLP80NvSo08oC3iluI8/tmsaT8Rs0HzmKZuhJGWdg==
   dependencies:
     file-loader "^1.1.11"
-    zeropack-core "0.1.0-alpha.0"
+    zeropack-core "0.1.1-alpha.0"
 
-zeropack-support-sass@0.1.0-alpha.0:
-  version "0.1.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/zeropack-support-sass/-/zeropack-support-sass-0.1.0-alpha.0.tgz#e8266ddfcd31d9f792212f75fd901d2be21af3ba"
-  integrity sha512-SBYTwb3CMD/w+Ml+cYjN66gCqf3Hy5i+xgtpnkN6qu0d8rKsmsnrUyKUGxnvebc79JtiaxMPfckRlZBAJbPSKw==
+zeropack-support-sass@0.1.1-alpha.0:
+  version "0.1.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/zeropack-support-sass/-/zeropack-support-sass-0.1.1-alpha.0.tgz#dad0f4eb3b9d9ea76139549a6522b62e6c0b5def"
+  integrity sha512-UZBIDr8idLXTMb2msqzL+yQQrwno+JGEH0PvOCMhX84exkgqNd5S6akqfNnn723Xwm9CHgLh1e8Jrw0IIfHi5g==
   dependencies:
     node-sass "^4.8.2"
     sass-loader "^6.0.7"
-    zeropack-core "0.1.0-alpha.0"
-    zeropack-support-css "0.1.0-alpha.0"
+    zeropack-core "0.1.1-alpha.0"
+    zeropack-support-css "0.1.1-alpha.0"
