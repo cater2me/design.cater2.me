@@ -7,6 +7,9 @@
   "bugs": "https://github.com/cater2me/design.cater2.me/issues",
   "license": "UNLICENSED",
   "main": "src/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "classnames": "^2.2.5",
     "lodash": "^4.17.11",
