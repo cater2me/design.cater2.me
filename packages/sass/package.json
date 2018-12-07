@@ -1,6 +1,6 @@
 {
   "name": "@cater2.me/sass",
-  "version": "0.1.6",
+  "version": "0.1.11",
   "description": "cater2me common sass variables, functions, mixins and helpers",
   "author": "cater2me",
   "homepage": "https://github.com/cater2me/design.cater2.me/tree/master/packages/sass",

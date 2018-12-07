@@ -1,6 +1,6 @@
 {
   "name": "@cater2.me/components",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "cater2me core components",
   "author": "cater2me",
   "homepage": "https://github.com/cater2me/design.cater2.me/tree/master/packages/components",
@@ -11,7 +11,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@cater2.me/sass": "^0.1.6",
+    "@cater2.me/sass": "0.1.11",
     "classnames": "^2.2.5",
     "lodash": "^4.17.11",
     "prop-types": "^15.6.0",
