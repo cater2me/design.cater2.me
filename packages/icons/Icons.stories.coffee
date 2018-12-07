@@ -14,7 +14,7 @@ storiesOf('Icons | ALL', module)
           <Tooltip
             trigger={['click']}
             placement='right'
-            overlay={<span>{packageJson.name}/allergen/{srcIcon.replace('./','')}</span>}
+            overlay={<span>{packageJson.name}/{srcIcon.replace('./','')}</span>}
           >
             <img
               style={maxWidth: '50px', margin: '20px'}
