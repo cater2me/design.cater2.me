@@ -7,17 +7,22 @@ requireIcons = require.context('./', true, /.svg$/)
 
 storiesOf('Icons | ALL', module)
   .add 'default', ->
-    requireIcons.keys().map((srcIcon, i) ->
-      <Tooltip
-        trigger={['click']}
-        placement='right'
-        overlay={<span>{packageJson.name}/allergen/{srcIcon.replace('./','')}</span>}
-      >
-        <img
-          style={maxWidth: '50px', margin: '20px'}
-          key={i}
-          src={requireIcons(srcIcon, true)}
-          alt={srcIcon}
-        />
-      </Tooltip>
-    )
+    <div>
+      <h2>You can Click on icon and see path for import: ) Enjoy</h2>
+      {
+        requireIcons.keys().map((srcIcon, i) ->
+          <Tooltip
+            trigger={['click']}
+            placement='right'
+            overlay={<span>{packageJson.name}/allergen/{srcIcon.replace('./','')}</span>}
+          >
+            <img
+              style={maxWidth: '50px', margin: '20px'}
+              key={i}
+              src={requireIcons(srcIcon, true)}
+              alt={srcIcon}
+            />
+          </Tooltip>
+        )
+      }
+    </div>
