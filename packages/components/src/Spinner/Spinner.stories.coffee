@@ -16,6 +16,6 @@ storiesOf('Components|Spinner', module)
     <Spinner 
       size={number('size', 40, options)}
       thickness={number('thickness', 3.5, {...options, step: 0.1, min: 1, max: 10})}
-      color={color('color', '#ffd73b')}
+      color={color('color', '#3e3c3d')}
       trackColor={color('trackColor', '')}
     />

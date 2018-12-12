@@ -14,7 +14,7 @@ class SpinnerSvg extends React.PureComponent
   @defaultProps:
     thickness: 3.5
     size: 40
-    color: '#ffd73b'
+    color: '#3e3c3d'
     # trackColor: 'transparent'
 
   renderSpinner: ->
