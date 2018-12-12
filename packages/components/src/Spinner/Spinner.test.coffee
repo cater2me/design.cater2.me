@@ -45,7 +45,7 @@ describe 'Spinner suite', () ->
       />
     )
     spinnerWrapper = wrapper.children()
-    expect(spinnerWrapper.hasClass(`${className}__spinner`)).toEqual(true)
+    expect(spinnerWrapper.hasClass("#{className}__spinner")).toEqual(true)
     expect(spinnerWrapper.prop('style')).toMatchObject({
       width: "#{size}px",
       height: "#{size}px",
@@ -74,7 +74,7 @@ describe 'Spinner suite', () ->
     delete document.styleSheets[0]
     expect(insertRuleMock).toHaveBeenCalledTimes(1)
     expect(insertRuleMock).toHaveBeenCalledWith(
-      expect.stringContaining("@keyframes c2me-spinner-#{size}"),
+      expect.stringContaining("@keyframes c2me-spinner-svg-#{size}"),
       styleSheetsMock.cssRules.length,
     )
   
@@ -121,15 +121,15 @@ describe 'Spinner suite', () ->
         stroke: color,
         strokeWidth: thickness,
         strokeDasharray: Math.PI * size,
-        cx: `${size / 2}`,
-        cy: `${size / 2}`,
-        r: `${size / 2 - thickness / 2}`,
+        cx: "#{size / 2}",
+        cy: "#{size / 2}",
+        r: "#{size / 2 - thickness / 2}",
       }),
     )
     expect(circleProps.style).toEqual(
       expect.objectContaining({
-        transformOrigin: `${0.5 * size}px ${0.5 * size}px 0`,
-        animationName: `nx-spinner-svg-${size}`,
+        transformOrigin: "#{0.5 * size}px #{0.5 * size}px 0",
+        animationName: "c2me-spinner-svg-#{size}",
         animationTimingFunction: 'linear',
         animationDuration: '2s',
         animationDelay: '0.0s',

@@ -8,12 +8,46 @@
   ],
   "scripts": {
     "start": "zeropack-storybook start",
-    "build": "zeropack-storybook build"
+    "build": "zeropack-storybook build",
+    "test": "NODE_PATH='packages/' jest"
   },
   "engines": {
     "node": "^8"
   },
+  "jest": {
+    "verbose": true,
+    "setupFiles": [
+      "./test/mockRAF.js"
+    ],
+    "setupTestFrameworkScriptFile": "./test/enzyme.js",
+    "transform": {
+      "^.+\\.coffee$": "./test/preprocessor.js",
+      "^.+\\.scss$": "jest-css-modules"
+    },
+    "moduleFileExtensions": [
+      "coffee",
+      "js"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.coffee",
+      "**/?(*.)(spec|specs|test|tests).coffee"
+    ],
+    "collectCoverageFrom": [
+      "packages/**/*.(coffee|cjsx)"
+    ],
+    "coverageReporters": [
+      "text",
+      "text-summary"
+    ]
+  },
   "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "jest": "^23.6.0",
+    "jest-css-modules": "^1.1.0",
     "lerna": "^3.4.3",
     "zeropack-core": "^0.1.1-alpha.0",
     "zeropack-preset-coffee": "^0.1.1-alpha.0",
